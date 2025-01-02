@@ -370,20 +370,19 @@ img.emoji {
 }
 
 .tuition-tilte {
-    font-size: 40px;
-    font-weight: bold;
     text-align: center;
+    font-size: 40px;
     color: #147229;
-    text-transform: uppercase;
- 
+    font-weight: bolder;
+    transform: scale(0.95); /* Kích thước ban đầu nhỏ hơn một chút */
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out; /* Hiệu ứng mượt */
 }
-.tuition-tilte:hover{
-    transform: scale(1.15);
-    /* Phóng to khi hover */
-    opacity: 0.9;
-    /* Độ mờ khi hover */
+
+.tuition-tilte:hover {
+    transform: scale(1.1); /* Phóng to nhẹ nhàng khi hover */
+    opacity: 1; /* Giữ độ rõ nét */
 }
-/* 
+
 
 @keyframes moveEffect {
     0% {
@@ -469,19 +468,19 @@ img.emoji {
 }
 
 .professional-tilte {
-    font-size: 40px;
-    font-weight: bold;
     text-align: center;
+    font-size: 40px;
     color: #147229;
-    text-transform: uppercase;
+    font-weight: bolder;
+    transform: scale(0.95); /* Kích thước ban đầu nhỏ hơn một chút */
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out; /* Hiệu ứng mượt */
+}
 
+.professional-tilte:hover {
+    transform: scale(1.1); /* Phóng to nhẹ nhàng khi hover */
+    opacity: 1; /* Giữ độ rõ nét */
 }
-.professional-tilte:hover{
-    transform: scale(1.15);
-    /* Phóng to khi hover */
-    opacity: 0.9;
-    /* Độ mờ khi hover */
-}
+
 
 /* @keyframes moveEffect {
     0% {
@@ -790,20 +789,20 @@ img.emoji {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     /* Đổ bóng */
 }
-
 .university-name {
-    padding-left: 80px;
+    text-align: center;
     font-size: 40px;
     color: #147229;
-    display: inline-block;
     font-weight: bolder;
+    transform: scale(0.95); /* Kích thước ban đầu nhỏ hơn một chút */
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out; /* Hiệu ứng mượt */
 }
-.university-name:hover{
-    transform: scale(1.15);
-    /* Phóng to khi hover */
-    opacity: 0.9;
-    /* Độ mờ khi hover */
+
+.university-name:hover {
+    transform: scale(1.1); /* Phóng to nhẹ nhàng khi hover */
+    opacity: 1; /* Giữ độ rõ nét */
 }
+
 .intro-text {
     font-size: 16px;
     /* Kích thước chữ vừa */
@@ -814,7 +813,7 @@ img.emoji {
     margin: 10px 0;
     /* Khoảng cách trên và dưới cho mỗi đoạn */
     text-align: center;
-    padding-left: 80px;
+    /* padding-left: 80px; */
 }
 
 .single-box-item {
@@ -929,6 +928,9 @@ img.emoji {
 
     .single-box.show {
         transform: translateX(0);
+    }
+    .prev {
+        left: -3px;
     }
 }
 
@@ -1089,10 +1091,9 @@ img.emoji {
     padding: 20px;
     position: relative;
     overflow: hidden;
-    /* Ẩn phần hình ảnh vượt quá section */
+    
 }
 
-/* Nền chuyển động - Hình ảnh hoa hoặc cá */
 .nd::before {
     content: "";
     position: absolute;
@@ -1101,13 +1102,11 @@ img.emoji {
     width: 100%;
     height: 100%;
     background-image: url('../images/hoa.jpeg');
-    /* Đường dẫn hình ảnh hoa hoặc cá */
     background-repeat: repeat;
-    /* Lặp lại hình ảnh nền */
+    
     background-size: 2000px 1000px;
-    /* Điều chỉnh kích thước của mỗi bông hoa hoặc cá */
-    animation: flowerMove 20s linear infinite;
-    /* Tạo chuyển động liên tục */
+    /* animation: flowerMove 20s linear infinite; */
+    
     z-index: -1;
     /* Đảm bảo hình ảnh nền nằm dưới nội dung */
     opacity: 0.5;
@@ -1167,18 +1166,19 @@ img.emoji {
 }
 /* Hiệu ứng thay đổi màu sắc liên tục */
 .job-title {
-    font-size: 40px;
-    font-weight: bold;
-    color:#147229;
     text-align: center;
+    font-size: 40px;
+    color: #147229;
+    font-weight: bolder;
+    transform: scale(0.95); /* Kích thước ban đầu nhỏ hơn một chút */
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out; /* Hiệu ứng mượt */
 }
 
 .job-title:hover {
-    transform: scale(1.15);
-    /* Phóng to khi hover */
-    opacity: 0.9;
-    /* Độ mờ khi hover */
+    transform: scale(1.1); /* Phóng to nhẹ nhàng khi hover */
+    opacity: 1; /* Giữ độ rõ nét */
 }
+
 
 
 .job-title.visible {
@@ -1241,7 +1241,7 @@ img.emoji {
 .card-body {
     text-align: center;
     /* Căn giữa nội dung */
-    padding: 20px;
+    /* padding: 20px; */
     background-color: #f0f4f8;
     /* Màu nền cho nội dung */
 }
@@ -1477,7 +1477,7 @@ img.emoji {
 .chat-section {
     position: fixed;
     right: 5px;
-    bottom: 50%;
+    bottom: 40%;
     z-index: 1000;
 }
 
@@ -1485,8 +1485,8 @@ img.emoji {
     border-radius: 50%;
     margin: 10px;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1709,7 +1709,6 @@ img.emoji {
     }
 
     .university-name {
-        padding-left: 44px;
         font-size: 20px;
     }
 
@@ -1779,18 +1778,17 @@ img.emoji {
 }
 
 .university {
+    text-align: center;
     font-size: 40px;
     color: #147229;
-    text-align: center;
-    display: inline-block;
     font-weight: bolder;
+    transform: scale(0.95); /* Kích thước ban đầu nhỏ hơn một chút */
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out; /* Hiệu ứng mượt */
 }
 
 .university:hover {
-    transform: scale(1.15);
-    /* Phóng to khi hover */
-    opacity: 0.9;
-    /* Độ mờ khi hover */
+    transform: scale(1.1); /* Phóng to nhẹ nhàng khi hover */
+    opacity: 1; /* Giữ độ rõ nét */
 }
 
 .custom-text {
@@ -1806,17 +1804,19 @@ img.emoji {
 }
 
 .train {
-    color: #147229;
     text-align: center;
-    display: inline-block;
-   
+    font-size: 40px;
+    color: #147229;
+    font-weight: bolder;
+    transform: scale(0.95); /* Kích thước ban đầu nhỏ hơn một chút */
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out; /* Hiệu ứng mượt */
 }
-.train:hover{
-    transform: scale(1.15);
-    /* Phóng to khi hover */
-    opacity: 0.9;
-    /* Độ mờ khi hover */
+
+.train:hover {
+    transform: scale(1.1); /* Phóng to nhẹ nhàng khi hover */
+    opacity: 1; /* Giữ độ rõ nét */
 }
+
 
 
 /* @keyframes gentle-move {
@@ -1906,32 +1906,26 @@ img.emoji {
     z-index: 1;
     /* Đặt overlay ở trên ảnh */
 }
-
 .caption {
     position: absolute;
     z-index: 2;
-    /* Đặt chữ lên trên ảnh */
-    color: #7de069 ;
-    /* Màu chữ */
+    color: #7de069;
     font-size: 80px;
-    /* Kích thước chữ */
     font-weight: bold;
-    /* Chữ đậm */
     text-align: center;
-    /* Căn giữa */
     top: 50%;
-    /* Đặt chữ giữa chiều cao */
     left: 50%;
-    /* Đặt chữ giữa chiều rộng */
-    transform: translate(-50%, -50%);
-    /* Căn giữa chính xác */
-    opacity: 0;
-    /* Khởi tạo độ mờ */
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    /* Hiệu ứng chuyển động */
+    transform: translate(-50%, -50%) scale(0.95); /* Luôn đặt ở vị trí và trạng thái khởi tạo */
+    opacity: 0.5; /* Luôn hiện mờ để có thể hover */
     white-space: nowrap;
-    /* Ngăn không cho chữ xuống dòng */
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out; /* Hiệu ứng mượt */
 }
+
+.caption:hover {
+    transform: translate(-50%, -50%) scale(1.1); /* Phóng to nhẹ nhàng khi hover */
+    opacity: 1; /* Tăng độ rõ khi hover */
+}
+
 
 .caption2 {
     position: absolute;
@@ -1945,38 +1939,29 @@ img.emoji {
     /* Hiệu ứng ánh sáng */
 }
 
-.caption span {
+/* .caption span {
     display: inline-block;
-    /* Để áp dụng hiệu ứng cho từng chữ */
     opacity: 0;
-    /* Bắt đầu với chữ trong suốt */
     animation: sparkle 0.7s infinite;
-    /* Thời gian animation */
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
         0 0 10px rgba(255, 255, 255, 0.8),
         0 0 15px rgba(255, 255, 255, 0.6);
-    /* Ánh sáng */
     will-change: opacity, transform;
-    /* Tối ưu hóa hiệu suất */
-}
+} */
 
-@keyframes sparkle {
+/* @keyframes sparkle {
 
     0%,
     100% {
         opacity: 1;
-        /* Độ trong suốt */
-        /* transform: translateY(0); */
-        /* Không di chuyển */
+       
     }
 
     50% {
         opacity: 1;
-        /* Hiển thị chữ */
-        /* transform: translateY(-10px); */
-        /* Di chuyển lên 10px */
+       
     }
-}
+} */
 
 .slide.active .caption {
     opacity: 1;
@@ -1998,13 +1983,11 @@ img.emoji {
     text-align: center;
     top: calc(50% + 80px);
     left: 50%;
-    transform: translate(-50%, -50%);
     opacity: 0;
-    transition: opacity 0.5s ease, transform 0.5s ease;
     white-space: nowrap;
 }
 
-.sub-caption span {
+/* .sub-caption span {
     display: inline-block;
     opacity: 0;
     animation: sparkle 0.6s infinite;
@@ -2012,7 +1995,7 @@ img.emoji {
         0 0 10px rgba(255, 255, 255, 0.8),
         0 0 15px rgba(255, 255, 255, 0.6);
     will-change: opacity, transform;
-}
+} */
 
 .slide.active .sub-caption {
     opacity: 1;
@@ -2033,18 +2016,17 @@ img.emoji {
     transform: translateY(-50%);
     /* background-color: rgba(255, 251, 251, 0.5); */
     background-color: transparent;
-
     border: none;
     font-size: 30px;
     cursor: pointer;
     z-index: 10;
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
     /* Thay đổi padding để nút đẹp hơn */
 }
 
-.prev {
+/* .prev {
     left: 10px;
-}
+} */
 
 .next {
     right: 10px;
@@ -2059,12 +2041,16 @@ img.emoji {
 
     .sub-caption {
         font-size: 20px;
+        top: calc(35% + 80px);
+    }
+    .next {
+        right: -4px;
     }
 }
 
 @media (max-width: 480px) {
     .caption {
-        font-size: 25px;
+        font-size: 22px;
         /* Kích thước chữ nhỏ hơn nữa */
     }
 
@@ -2092,20 +2078,23 @@ img.emoji {
     .slides {
         height: 300px;
     }
+  
 }
 /* Tiêu đề với hiệu ứng đánh máy và màu sắc nhẹ nhàng */
 .quality {
+    text-align: center;
     font-size: 40px;
-    font-weight: bold;
-    color: #147229; 
+    color: #147229;
+    font-weight: bolder;
+    transform: scale(0.95); /* Kích thước ban đầu nhỏ hơn một chút */
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out; /* Hiệu ứng mượt */
 }
 
 .quality:hover {
-    transform: scale(1.15);
-    /* Phóng to khi hover */
-    opacity: 0.9;
-    /* Độ mờ khi hover */
+    transform: scale(1.1); /* Phóng to nhẹ nhàng khi hover */
+    opacity: 1; /* Giữ độ rõ nét */
 }
+
 /* Ẩn phần tử ban đầu */
 .animate-right {
     opacity: 0; /* Ẩn */
@@ -2131,4 +2120,13 @@ img.emoji {
     max-height: 200px; /* Giới hạn chiều cao tối đa */
     object-fit: cover; /* Cắt ảnh nếu cần để phù hợp với khung */
     margin-top: 15px; /* Khoảng cách trên ảnh */
+}
+.phone-icon {
+   
+    width: 35px; /* Điều chỉnh kích thước nếu cần */
+    height: 35px; /* Điều chỉnh kích thước nếu cần */
+}
+
+.phone-icon:hover {
+    background-color: #f0f0f0; /* Thay đổi màu khi hover nếu muốn */
 }
