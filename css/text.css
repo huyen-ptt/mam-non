@@ -15,7 +15,7 @@ img.emoji {
     position: relative;
     padding: 24px 0;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    background-image: url('../images/nen.jpg');
+    background-image: url('../images/nen.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -63,7 +63,7 @@ img.emoji {
 }
 
 .register-form button {
-    background-color: #ff6f20;
+    background-color: #0174CF;
     /* Button color */
     color: white;
     /* Button text color */
@@ -97,7 +97,7 @@ img.emoji {
     width: 40px;
     height: 40px;
     margin-right: 15px;
-    background-color: #ff6f20;
+    background-color: #0174CF;
     /* Nền màu cho icon */
     border-radius: 50%;
     padding: 10px;
@@ -136,7 +136,7 @@ img.emoji {
     border: 1px solid #59ca6d#ff6f00;
 } */
 .form-container input[type="submit"] {
-    background-color: #ff6f20;
+    background-color: #0174CF;
     border: none;
     color: white;
     cursor: pointer;
@@ -144,7 +144,7 @@ img.emoji {
 }
 
 .form-container input[type="submit"]:hover {
-    background-color: #ff6f20;
+    background-color: #0174CF;
 }
 
 .form-container textarea {
@@ -159,7 +159,7 @@ img.emoji {
 }
 
 .form-container textarea:focus {
-    border-color: #ff6f20;
+    border-color: #0174CF;
     box-shadow: 0 0 8px rgba(255, 111, 0, 0.5);
 }
 
@@ -171,7 +171,7 @@ img.emoji {
 
 /* Container alignment */
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -209,7 +209,7 @@ img.emoji {
 .social-icons i {
     font-size: 32px;
     /* Tăng kích thước icon */
-    color: #ff6f20;
+    color: #0174CF;
     /* Màu xanh nổi bật */
     transition: transform 0.3s ease, color 0.3s ease;
     /* Hiệu ứng khi hover */
@@ -218,7 +218,7 @@ img.emoji {
 .social-icons i:hover {
     transform: scale(1.2);
     /* Phóng to khi hover */
-    color: #ff6f20;
+    color: #0174CF;
     /* Đổi sang màu xanh đậm hơn khi hover */
 }
 
@@ -252,7 +252,7 @@ img.emoji {
 }
 
 .scroll-link a:hover {
-    color: #ff6f20;
+    color: #0174CF;
     background-color: #fff
 }
 
@@ -267,7 +267,7 @@ img.emoji {
     width: 40px;
     height: 40px;
     margin-right: 15px;
-    background-color: #ff6f20;
+    background-color: #0174CF;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -391,7 +391,7 @@ img.emoji {
 .tuition-tilte {
     text-align: center;
     font-size: 40px;
-    color: #ff6f20;
+    color: #0174CF;
     font-weight: bolder;
     transform: scale(0.95);
     /* Kích thước ban đầu nhỏ hơn một chút */
@@ -492,7 +492,7 @@ img.emoji {
 .professional-tilte {
     text-align: center;
     font-size: 40px;
-    color: #ff6f20;
+    color: #0174CF;
     font-weight: bolder;
     transform: scale(0.95);
     /* Kích thước ban đầu nhỏ hơn một chút */
@@ -574,7 +574,7 @@ img.emoji {
     margin-bottom: 20px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #ff6f20;
+    color: #0174CF;
     /* Màu chữ của tiêu đề */
 }
 
@@ -591,7 +591,7 @@ img.emoji {
 }
 
 .footer-widget .menu a:hover {
-    background-color: #ff6f20;
+    background-color: #0174CF;
     /* Màu nền khi hover */
     color: #fff;
     /* Màu chữ khi hover */
@@ -640,7 +640,7 @@ img.emoji {
     text-align: center;
     padding: 0 10px;
     box-sizing: border-box;
-    color: #ff6f20;
+    color: #0174CF;
     font-weight: 700;
 }
 
@@ -793,8 +793,8 @@ img.emoji {
 
 .university-name {
     text-align: center;
-    font-size: 40px;
-    color: #ff6f20;
+    font-size: 37px;
+    color: #0174CF;
     font-weight: bolder;
     transform: scale(0.95);
     /* Kích thước ban đầu nhỏ hơn một chút */
@@ -814,7 +814,7 @@ img.emoji {
     line-height: 1.5;
     color: #333;
     /* margin: 10px 0; */
-    text-align: center;
+    /* text-align: center; */
 }
 
 .single-box-item {
@@ -840,7 +840,7 @@ img.emoji {
 }
 
 .single-box-item:hover .icon i {
-    color: #ff6f20;
+    color: #0174CF;
 }
 
 
@@ -861,7 +861,7 @@ img.emoji {
     height: 70px;
     margin: 0 auto 20px;
     font-size: 45px;
-    color: #ff6f20;
+    color: #0174CF;
     background: radial-gradient(circle, #e8f5e9, #d0ead4);
     border-radius: 50%;
     /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), inset 0 1px 5px rgba(255, 255, 255, 0.5); */
@@ -883,7 +883,7 @@ img.emoji {
     /* Kích thước chữ tiêu đề */
     font-weight: bold;
     /* Chữ đậm */
-    color: #ff6f20;
+    color: #0174CF;
     /* Xanh lá đậm hơn */
     margin-bottom: 15px;
     /* Khoảng cách dưới tiêu đề */
@@ -935,8 +935,10 @@ img.emoji {
         left: -3px;
 
     }
-    .prev, .next {
-        top:65% !important;
+
+    .prev,
+    .next {
+        top: 65% !important;
     }
 
 }
@@ -1056,7 +1058,7 @@ img.emoji {
     /* Đặt chiều rộng cho vòng tròn */
     height: 60px;
     /* Đặt chiều cao cho vòng tròn */
-    background-color: #ff6f20;
+    background-color: #0174CF;
     /* Màu nền cho vòng tròn */
     border-radius: 50%;
     /* Để tạo hình tròn */
@@ -1085,7 +1087,7 @@ img.emoji {
 }
 
 .entry-content p:hover {
-    color: #ff6f20;
+    color: #0174CF;
 }
 
 /* Job Section với nền động */
@@ -1116,7 +1118,7 @@ img.emoji {
     opacity: 0.5;
 } */
 .nd-section {
-    background-image: url('../images/nen2.jpg');
+    background-image: url('../images/nen2.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1202,7 +1204,7 @@ img.emoji {
 .job-title {
     text-align: center;
     font-size: 40px;
-    color: #ff6f20;
+    color: #0174CF;
     font-weight: bolder;
     transform: scale(0.95);
     /* Kích thước ban đầu nhỏ hơn một chút */
@@ -1286,7 +1288,7 @@ img.emoji {
 
 .card-title {
     font-size: 20px;
-    color: #ff6f20;
+    color: #0174CF;
     font-weight: 700;
 }
 
@@ -1346,7 +1348,7 @@ img.emoji {
 .header-button a {
     display: inline-block;
     border-radius: 5px;
-    background: #ff6f20 !important;
+    background: #0174CF !important;
     color: white;
     text-decoration: none;
     animation: scaleEffect 1.5s infinite;
@@ -1372,7 +1374,7 @@ img.emoji {
 
 .section_service a.scroll-link {
     display: inline-block;
-    background-color: #ff6f20;
+    background-color: #0174CF;
     color: white;
     padding: 8px 12px;
     border-radius: 5px;
@@ -1404,7 +1406,7 @@ img.emoji {
 
 .section_tuition a.scroll-link {
     display: inline-block;
-    background-color: #ff6f20;
+    background-color: #0174CF;
     color: white;
     padding: 8px 12px;
     border-radius: 5px;
@@ -1521,7 +1523,7 @@ img.emoji {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-color: #ff6f20;
+    background-color: #0174CF;
 }
 
 .chat-icon:hover {
@@ -1598,7 +1600,7 @@ img.emoji {
     /* Kích thước nút */
     height: 50px;
     /* Kích thước nút */
-    background-color: #ff6f20;
+    background-color: #0174CF;
     /* Màu nền */
     border-radius: 50%;
     /* Hình tròn */
@@ -1748,6 +1750,7 @@ img.emoji {
 
     .section_about .about-content span {
         font-size: 12pt;
+
     }
 }
 
@@ -1781,10 +1784,11 @@ img.emoji {
 
 }
 
+/* 
 .header-logo {
     display: flex;
     justify-content: flex-end;
-}
+} */
 
 @keyframes scale-bounce {
 
@@ -1817,8 +1821,8 @@ img.emoji {
 
 .university {
     text-align: center;
-    font-size: 40px;
-    color: #ff6f20;
+    font-size: 37px;
+    color: #0174CF;
     font-weight: bolder;
     transform: scale(0.95);
     /* Kích thước ban đầu nhỏ hơn một chút */
@@ -1840,7 +1844,7 @@ img.emoji {
 }
 
 .highlight-text {
-    color: #ff6f20;
+    color: #0174CF;
     font-family: 'Courier New', monospace;
     font-weight: bold;
 }
@@ -1848,7 +1852,7 @@ img.emoji {
 .train {
     text-align: center;
     font-size: 40px;
-    color: #ff6f20;
+    color: #0174CF;
     font-weight: bolder;
     transform: scale(0.95);
     /* Kích thước ban đầu nhỏ hơn một chút */
@@ -1956,7 +1960,7 @@ img.emoji {
 .caption {
     position: absolute;
     z-index: 2;
-    color: #ff6f20;
+    color: #0174CF;
     font-size: 70px;
     font-weight: bold;
     text-align: center;
@@ -2030,7 +2034,7 @@ img.emoji {
 .sub-caption {
     position: absolute;
     z-index: 2;
-    color: #ff6f20;
+    color: #0174CF;
     font-size: 40px;
     text-align: center;
     top: calc(50% + 80px);
@@ -2087,8 +2091,8 @@ img.emoji {
 /* Media queries cho responsive */
 @media (max-width: 768px) {
     .caption {
-        font-size: 40px ;
-        top:62% !important;
+        font-size: 40px;
+        top: 62% !important;
         /* Kích thước chữ nhỏ hơn */
     }
 
@@ -2139,7 +2143,7 @@ img.emoji {
 .quality {
     text-align: center;
     font-size: 40px;
-    color: #ff6f20;
+    color: #0174CF;
     font-weight: bolder;
     transform: scale(0.95);
     /* Kích thước ban đầu nhỏ hơn một chút */
@@ -2298,7 +2302,7 @@ img.emoji {
 
 .phone-link {
     padding: 10px 20px;
-    color: #ff6f20;
+    color: #0174CF;
     /* Chữ màu trắng */
     text-decoration: none;
     /* Loại bỏ gạch chân */
@@ -2323,7 +2327,7 @@ img.emoji {
 .achievements-h2 {
     text-align: center;
     font-size: 40px;
-    color: #ff6f20;
+    color: #0174CF;
     font-weight: bolder;
     transform: scale(0.95);
     /* Kích thước ban đầu nhỏ hơn một chút */
@@ -2383,7 +2387,7 @@ img.emoji {
 }
 
 .achievement .icon {
-    background-color: #ff6f20;
+    background-color: #0174CF;
     color: white;
     border-radius: 50%;
     width: 60px;
@@ -2402,7 +2406,7 @@ img.emoji {
 .achievements-content h3 {
     margin-bottom: 10px;
     font-size: 20px;
-    color: #ff6f20;
+    color: #0174CF;
     font-weight: 600;
 }
 
@@ -2480,9 +2484,10 @@ img.emoji {
 .header-logo img {
     max-width: 100px;
     /* Giới hạn chiều rộng của logo */
-    height: 65px;
-    max-width: initial;
-    padding: 10px;
+    height: 100px;
+    /* max-width: initial;
+    padding: 10px; */
+
 }
 
 .header-title {
@@ -2493,7 +2498,7 @@ img.emoji {
 .header h2 {
     font-size: 20px;
     /* Kích thước chữ cho tiêu đề */
-    color: #ff6f20;
+    color: #0174CF;
     /* Màu chữ cho tiêu đề */
     margin: 0;
     font-weight: bold;
@@ -2517,7 +2522,11 @@ img.emoji {
         /* Giới hạn chiều rộng của logo */
         height: 45px;
         /* max-width: initial; */
-        padding: 10px;
+        /* padding: 10px; */
+    }
+
+    .header__nav {
+        margin-top: 46px !important;
     }
 
 
@@ -2551,4 +2560,48 @@ img.emoji {
     .nav-inner {
         display: none;
     }
+}
+
+#nav .menu-item a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    /* Màu chữ mặc định */
+    background-color: transparent;
+    /* Màu nền mặc định */
+    transition: color 0.3s, background-color 0.3s;
+    /* Hiệu ứng chuyển đổi */
+}
+
+/* Hiệu ứng hover */
+#nav .menu-item a:hover {
+    color: blue !important;
+    /* Chữ chuyển thành màu xanh */
+    background-color: white;
+    /* Nền chuyển thành màu trắng */
+}
+
+.header {
+    position: fixed;
+    /* Giữ header ở đầu trang */
+    top: 0;
+    /* Đặt vào vị trí trên cùng */
+    left: 0;
+    /* Đặt vào vị trí bên trái */
+    right: 0;
+    /* Đặt vào vị trí bên phải */
+    z-index: 1000;
+    /* Đảm bảo header nằm trên các phần tử khác */
+    padding: 0px;
+}
+
+.header__nav {
+    margin-top: 100px;
+    /* Tạo khoảng cách cho nội dung dưới header */
+}
+
+.new-about-content,
+.new-about-image {
+    text-align: center;
+    /* Căn giữa văn bản trong nội dung */
 }
