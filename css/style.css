@@ -17112,7 +17112,8 @@ ul.header-info-right li a {
 	/* background-size: 400px; */
 	/* height: 600px; */
 	background-color: rgba(255, 255, 255, 0.7);
-	background-blend-mode: overlay
+	background-blend-mode: overlay;
+	/* height: 360px; */
 }
 
 @media (max-width: 767px) {
@@ -17168,6 +17169,7 @@ ul.header-info-right li a {
 }
 
 .section_service .services-box {
+	height: 360px;
 	margin-bottom: 100px;
 	text-align: center;
 	background-color: #fff;
@@ -17207,6 +17209,7 @@ ul.header-info-right li a {
 }
 
 .section_service .services-box h3 {
+	margin-top: 0px;
 	font-size: 20px;
 	font-weight: 600;
 	-webkit-transition: 0.5s;

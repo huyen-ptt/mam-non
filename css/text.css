@@ -15,7 +15,7 @@ img.emoji {
     position: relative;
     padding: 24px 0;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    background-image: url('../images/nen.png');
+    background-image: url('../images/nen2.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -750,6 +750,7 @@ img.emoji {
 
 /* Hiệu ứng cho hình ảnh */
 .new-about-image {
+    
     opacity: 0;
     /* Ẩn hình ảnh ban đầu */
     transform: translateX(50px);
@@ -1821,7 +1822,7 @@ img.emoji {
 
 .university {
     text-align: center;
-    font-size: 37px;
+    font-size: 44px;
     color: #0174CF;
     font-weight: bolder;
     transform: scale(0.95);
@@ -2496,7 +2497,7 @@ img.emoji {
 }
 
 .header h2 {
-    font-size: 20px;
+    font-size: 30px;
     /* Kích thước chữ cho tiêu đề */
     color: #0174CF;
     /* Màu chữ cho tiêu đề */
@@ -2604,4 +2605,225 @@ img.emoji {
 .new-about-image {
     text-align: center;
     /* Căn giữa văn bản trong nội dung */
+}
+
+.new-about-image .img-responsive{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-content a.scroll-link {
+    display: inline-block;
+    background-color: #0174CF;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: scaleEffect 1.5s infinite;
+
+}
+
+.about-content a.scroll-link:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+@keyframes scaleEffect {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.new-about-content a.scroll-link {
+    display: inline-block;
+    background-color: #0174CF;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: scaleEffect 1.5s infinite;
+    font-weight: bold;
+
+}
+
+.new-about-content a.scroll-link:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+@keyframes scaleEffect {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.about-content a.scroll-link {
+    display: inline-block;
+    background-color: #0174CF;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: scaleEffect 1.5s infinite;
+
+}
+
+.about-content a.scroll-link:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+@keyframes scaleEffect {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.banner-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Cho phép xuống dòng khi không đủ chỗ */
+    /* gap: 20px;  */
+    /* padding: 20px; */
+}
+
+.banner-item {
+    border-top: 1px solid white;
+    flex: 1 1 calc(33.333% - 20px); /* Chiều rộng mỗi cột là 33.33%, trừ khoảng cách giữa các cột */
+    background-color: #0174CF; /* Màu xanh dương chủ đạo */
+    /* border-radius: 5px; */
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-align: center;
+  
+}
+.banner-item img {
+    /* width: 60%;  */
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.banner-item h3 {
+    margin: 20px 0px;
+    font-size: 23px; /* Chữ lớn hơn */
+    font-weight: bold;
+    color: #ffffff; /* Màu chữ trắng */
+   
+}
+
+.banner-item p {
+    font-size: 1.2rem; /* Phóng to mô tả */
+    color: #ffffff; /* Màu chữ trắng */
+    margin-top: 10px;
+}
+
+/* Responsive: Dàn xuống mỗi ô một hàng trên màn hình nhỏ */
+@media (max-width: 768px) {
+    .banner-item {
+        flex: 1 1 100%; /* Chiều rộng mỗi cột chiếm 100% */
+    }
+
+    .banner-item img {
+        width: 40%; /* Hình ảnh nhỏ hơn nữa khi ở màn hình nhỏ */
+    }
+
+    .banner-item h3 {
+        font-size: 2.5rem; /* Chữ lớn hơn trên màn hình nhỏ */
+    }
+}
+.benefits-section {
+    display: flex;
+    flex-direction: column; /* Đổi từ ngang sang dọc */
+    gap: 20px; /* Khoảng cách giữa các khung */
+    padding: 10px; /* Padding tổng thể của section */
+}
+
+.benefit-box {
+    padding: 20px; /* Padding của mỗi khung */
+    background-color: white; /* Nền trắng */
+    color: #0174CF; /* Chữ màu xanh biển đậm */
+    border-radius: 8px; /* Bo góc cho khung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho khung */
+}
+
+.benefit-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.benefit-box li {
+    margin-bottom: 10px;
+}
+
+.banner-item a.scroll-link{
+    display: inline-block;
+    background-color: white;
+    color: #0174CF;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: scaleEffect 1.5s infinite;
+    font-weight: bold;
+}
+
+.banner-item a.scroll-link:hover {
+    transform: scale(1.1);
+    background-color: #0174CF;
+    color: white;
+}
+
+.number-list {
+    list-style-type: none; /* Không hiển thị dấu chấm đầu dòng */
+    padding: 0; /* Bỏ padding mặc định */
+    margin: 0 auto;
+    width: 80%; 
+    text-align: left; /* Căn trái cho văn bản */
+}
+
+.number-list li {
+    font-size: 18px; /* Kích thước chữ */
+    color: #333; /* Màu chữ */
+    margin: 15px 0; /* Khoảng cách giữa các mục */
+    padding: 10px; /* Padding cho các mục */
+    border-left: 4px solid #007bff; /* Đường viền bên trái */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+}
+
+.number-list li:hover {
+    background-color: #f0f8ff; /* Màu nền khi di chuột */
 }
