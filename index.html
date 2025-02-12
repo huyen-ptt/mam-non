@@ -34,6 +34,8 @@
 	<script src="./js/revslider.js" type="text/javascript"></script>
 	<script src="./js/jquery.mobile-menu.min.js" type="text/javascript"></script>
 	<script src="./js/wp-embed.min.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -68,30 +70,166 @@
 									<div class="mm-toggle"
 										style="display: flex; align-items: center;padding-top: 20px; color: white;">
 										<i class="fa fa-bars" style="font-size: 19px;"></i>
-										<h2 style="margin: 0; padding-left: 5px;">Nuôi dưỡng đam mê - khuyến khích sáng
-											tạo - uy tín</h2>
+										<!-- <h2 style="margin: 0; padding-left: 5px;">Nuôi dưỡng đam mê - khuyến khích sáng
+											tạo - uy tín</h2> -->
 									</div>
 								</div>
 								<div class="nav-inner" style="justify-content: space-between; align-items: center;">
 									<ul id="nav" class="hidden-xs" style="list-style: none; padding: 0; margin: 0;">
 										<li id="menu-item-80" class="menu-item">
-											<a href="#about-us" class="scroll-link" style="color:#ffffff;">Giới
+											<a href="#about-us" class="scroll-link"
+												style="color:#ffffff; font-weight: 900;">Giới
 												thiệu</a>
 										</li>
 										<li id="menu-item-84" class="menu-item">
-											<a href="#training-program" style="color:#ffffff;" class="scroll-link">Tuyển
+											<a href="#training-program" style="color:#ffffff; font-weight: 900;"
+												class="scroll-link">Tuyển
 												sinh các ngành</a>
 										</li>
 										<li id="menu-item-87" class="menu-item">
-											<a href="#contact" class="scroll-link" style="color:#ffffff;">Chất lượng</a>
+											<a href="#contact" class="scroll-link"
+												style="color:#ffffff; font-weight: 900;">Quyền lợi học viên</a>
 										</li>
 										<!-- <li id="menu-item-88" class="menu-item">
 											<a href="#interest" class="scroll-link"  style="color:#ffffff;">Quyền lợi</a>
 										</li> -->
-										<li id="menu-item-89" class="menu-item">
-											<a href="#contact" class="scroll-link" style="color:#ffffff;">Liên hệ</a>
-										</li>
+
 									</ul>
+									<div class="contact">
+										<a href="#" class="button" onclick="showModal(event)">Đăng ký</a>
+									
+										<div class="modal" id="registrationModal" style="display: none;">
+											<div class="modal-content">
+												<button class="close" onclick="closeModal('registrationModal')"><i class="fas fa-xmark"></i></button>
+												<h2 style="text-align:center;">Đăng Ký</h2>
+												<form>
+													<div class="form-row">
+														<div class="form-group">
+															<label for="fullname">Họ và tên</label>
+															<input type="text" id="fullname" placeholder="Họ và tên" required>
+														</div>
+														<div class="form-group">
+															<label for="dob">Ngày sinh</label>
+															<input type="date" id="dob" required>
+														</div>
+													</div>
+													<div class="form-row">
+														<div class="form-group">
+															<label for="gender">Giới tính</label>
+															<select id="gender" required>
+																<option value="">Chọn giới tính</option>
+																<option value="male">Nam</option>
+																<option value="female">Nữ</option>
+																<option value="other">Khác</option>
+															</select>
+														</div>
+														<div class="form-group">
+															<label for="address">Địa chỉ thường trú</label>
+															<input type="text" id="address" placeholder="Địa chỉ thường trú" required>
+														</div>
+													</div>
+													<div class="form-row">
+														<div class="form-group">
+															<label for="phone">Số điện thoại</label>
+															<input type="tel" id="phone" placeholder="Số điện thoại" required>
+														</div>
+														<div class="form-group">
+															<label for="email">Email liên hệ</label>
+															<input type="email" id="email" placeholder="Email liên hệ" required>
+														</div>
+													</div>
+													<select id="major" name="major" style="color: rgba(51, 51, 51, 0.7); margin-bottom:15px;">
+														<option value="spham">Các ngành học</option>
+														<option value="spham_tieuhoc">Sư Phạm Tiểu Học</option>
+														<option value="spham_toan">Sư Phạm Toán (Toán Học)</option>
+														<option value="spham_ly">Sư Phạm Lý (Vật Lý)</option>
+														<option value="spham_hoa">Sư Phạm Hóa (Hóa Học)</option>
+														<option value="spham_sinh">Sư Phạm Sinh (Sinh Học)</option>
+														<option value="spham_su">Sư Phạm Sử (Lịch Sử)</option>
+														<option value="spham_mamnon">Sư Phạm Mầm Non</option>
+													</select>
+									
+													<button type="submit">Gửi</button>
+												</form>
+											</div>
+										</div>
+									</div>
+									
+									<script>
+										function showModal(event) {
+											event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+											document.getElementById('registrationModal').style.display = 'flex'; // Hiện bảng đăng ký
+										}
+									
+										function closeModal() {
+											document.getElementById('registrationModal').style.display = 'none'; // Ẩn bảng đăng ký
+										}
+									</script>
+									<div class="image-modal" id="imageModal">
+										<div class="modal-content">
+											<button class="close" onclick="closeImageModal()"><i class="fas fa-xmark"></i></button>
+											<img id="modalImage" src="./images/text1.jpg" alt="Ảnh chi tiết" style="width: 100%;">
+										</div>
+									</div>
+									<script>
+										function showImageModal(event) {
+											event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+											const modal = document.getElementById('imageModal');
+											const image = document.getElementById('modalImage');
+									
+											// Đặt đường dẫn ảnh ở đây
+											image.src = './images/text1.jpg'; // Thay đổi đường dẫn ảnh
+											modal.style.display = 'flex'; // Hiện modal
+										}
+									
+										function closeImageModal() {
+											document.getElementById('imageModal').style.display = 'none'; // Ẩn modal
+										}
+									</script>
+									<div class="image-modal" id="imageModal">
+										<div class="modal-content">
+											<button class="close" onclick="closeImageModal()"><i class="fas fa-xmark"></i></button>
+											<img id="modalImage" src="./images/text1.jpg" alt="Ảnh chi tiết" style="width: 100%;">
+										</div>
+									</div>
+									<script>
+										function showImageModal(event) {
+											event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+											const modal = document.getElementById('imageModal');
+											const image = document.getElementById('modalImage');
+									
+											// Đặt đường dẫn ảnh ở đây
+											image.src = './images/text1.jpg'; // Thay đổi đường dẫn ảnh
+											modal.style.display = 'flex'; // Hiện modal
+										}
+									
+										function closeImageModal() {
+											document.getElementById('imageModal').style.display = 'none'; // Ẩn modal
+										}
+									</script>
+									<div class="image-modal" id="imageModal">
+										<div class="modal-content">
+											<button class="close" onclick="closeImageModal()"><i class="fas fa-xmark"></i></button>
+											<img id="modalImage" src="./images/slider1.jpg" alt="Ảnh chi tiết" style="width: 100%;">
+										</div>
+									</div>
+									<script>
+										function showImageModal2(event) {
+											event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+											const modal = document.getElementById('imageModal');
+											const image = document.getElementById('modalImage');
+									
+											// Đặt đường dẫn ảnh ở đây
+											image.src = './images/slider1.jpg'; // Thay đổi đường dẫn ảnh
+											modal.style.display = 'flex'; // Hiện modal
+										}
+									
+										function closeImageModal() {
+											document.getElementById('imageModal').style.display = 'none'; // Ẩn modal
+										}
+									</script>
+									
+									</div>
 								</div>
 							</nav>
 						</div>
@@ -101,20 +239,20 @@
 		</header>
 		<section class="banner-row">
 			<div class="banner-item">
-				<img src="./images/slider1.jpg" alt="Tuyển sinh cao đẳng mầm non">
-				<h3 href="#cd">TS CAO ĐẲNG MẦM NON</h3>
+				<img src="./images/slider2.jpg" alt="Tuyển sinh cao đẳng mầm non">
+				<h3 href="#cd">CAO ĐẲNG MẦM NON</h3>
 				<!-- <p>Tự hào truyền thống - Vững chắc tương lai</p> -->
 				<a href="#about-us" title="Xem thêm" class="scroll-link">Xem chi tiết</a>
 			</div>
 			<div class="banner-item">
-				<img src="./images/slider1.jpg" alt="Tuyển sinh cao đẳng mầm non">
-				<h3>TS ĐẠI HỌC MẦM NON</h3>
+				<img src="./images/slider1.jpg" alt="Tuyển sinh đại học mầm non">
+				<h3>ĐẠI HỌC MẦM NON</h3>
 				<!-- <p>Tự hào truyền thống - Vững chắc tương lai</p> -->
 				<a href="#why-us" title="Xem thêm" class="scroll-link">Xem chi tiết</a>
 			</div>
 			<div class="banner-item">
-				<img src="./images/slider1.jpg" alt="Tuyển sinh cao đẳng mầm non">
-				<h3>TS NGÀNH KHÁC</h3>
+				<img src="./images/slider.jpg" alt="Tuyển sinh ngành khác">
+				<h3>NGÀNH KHÁC</h3>
 				<!-- <p>Tự hào truyền thống - Vững chắc tương lai</p> -->
 				<a href="#about-dff" title="Xem thêm" class="scroll-link">Xem chi tiết</a>
 			</div>
@@ -125,29 +263,29 @@
 				<div class="section_about">
 					<div class="container">
 						<div class="row" id="element1">
-							<div class="col-lg-6 col-md-6 col-sm-12 about-content" id="content1">
-								<h3 class="university">TS CAO ĐẲNG MẦM NON</h3>
-								<p style="font-size: 25pt;">
-									<strong>
-										<span>PHẠM VI TUYỂN SINH</span>
-										<span style="font-weight: normal;">Tuyển sinh trên toàn
-											quốc</span>
-									</strong>
+							<div class="col-lg-6 col-md-6 col-sm-12 order-1 new-about-content">
+								<h3 class="university-name">ĐẠI HỌC MẦM NON</h3>
+								<p style="font-size: 20px;"><strong>PHẠM VI TUYỂN SINH:</strong></p>
+								<p style="font-weight: normal; font-size: 20px;">TUYỂN SINH TRÊN TOÀN QUỐC</p>
+							<div style="text-align: left;">
+								<p style="color: #0d130e;"><strong>Đối tượng tuyển sinh:</strong></p>
+								<p style="color: #0d130e;">• Có bằng THPT loại khá<br>
+									• Có bằng Trung cấp, Cao đẳng mầm non<br>
+									• Có bằng Trung cấp, Cao đẳng, Đại học khác ngành
 								</p>
-								<p style="color: #0d130e;">Địa chỉ đào tạo & nộp hồ sơ: Ban tuyển sinh, Phòng Đào
-									tạo – Nghiên cứu khoa học,
-									nghiên cứu sinh học</p>
-								<p style="color: #0d130e;">CS1: Km71, quốc lộ 17, xã Quế Nham, huyện Tân Yên, tỉnh
-									Bắc Giang</p>
-								<p style="color: #0d130e;">CS2: 147 đường Thánh Thiên, phường Lê Lợi, TP Bắc Giang,
-									tỉnh Bắc Giang</p>
-								<p>Số điện thoại:<a href="tel:0123456789" class="sdt-link">0123456789</a></p>
-
-								<a href="#contact" title="Xem thêm" class="scroll-link">Xem chi tiết</a>
+								<p style="color: #0d130e;"><strong>Thời gian học: 20 - 36 tháng</strong></p>
+								<p>• Nhà trường có mở lớp học online kết hợp tại chỗ, tạo điều kiện cho những người ở xa, bận rộn, vừa đi học vừa đi làm</p>
+								<p>Số điện thoại: <a href="tel:0837226566" class="phone-link">0837226566</a></p>
+								<a href="#" title="Xem thêm" class="scroll-link" onclick="showImageModal(event)">Xem chi tiết</a>
+							
+							</div>	
 							</div>
+							
+							
+							
 							<div class="col-lg-6 col-md-6 col-sm-12 about-content " id="image1"
 								style="display: flex; justify-content: center; align-items: center; height: 100%;">
-								<img class="img-responsive mx-auto d-block lazy" src="./images/15.jpg"
+								<img class="img-responsive mx-auto d-block lazy" src="./images/15.png"
 									alt="Công ty Home Health Care"
 									style="width: 100%; height: 100%; object-fit: cover;">
 							</div>
@@ -155,7 +293,9 @@
 					</div>
 				</div>
 			</section>
-			<section class="awe-section-4 wow bounceInUp animated" id="why-us">
+			
+			
+			<section class="awe-section-4" id="why-us">
 				<div class="section_why">
 					<div class="container">
 						<div class="row" id="element2">
@@ -166,24 +306,44 @@
 									style="width: 100%; height: auto; object-fit: cover; padding-top: 20px;">
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 order-1 new-about-content">
-								<h3 class="university-name">TS ĐẠI HỌC MẦM NON</h3>
-								<p class="intro-text">
-									Là một trong những cơ sở giáo dục hàng đầu tại Việt Nam,
-									với mục tiêu đào tạo nguồn nhân lực chất lượng cao cho đất nước. Trường cung cấp
-									các chương trình đào tạo đa dạng từ cử nhân đến thạc sĩ, với nhiều chuyên ngành
-									phong phú.
+								<h3 class="university-name">ĐẠI HỌC MẦM NON</h3>
+								<p style="font-size: 20px;"><strong>PHẠM VI TUYỂN SINH:</strong></p>
+								<p style="font-weight: normal; font-size: 20px;">TUYỂN SINH TRÊN TOÀN QUỐC</p>
+								<div style="text-align: left;">
+									<p style="color: #0d130e;"><strong>Đối tượng tuyển sinh:</strong></p>
+								<p style="color: #0d130e;">• Có bằng THPT loại khá<br>
+									• Có bằng Trung cấp, Cao đẳng mầm non<br>
+									• Có bằng Trung cấp, Cao đẳng, Đại học khác ngành
 								</p>
-								<p class="intro-text">
-									Với đội ngũ giảng viên tận tâm và cơ sở vật chất hiện đại, trường
-									cam kết
-									mang đến cho sinh viên một môi trường học tập lý tưởng, khuyến khích sự sáng tạo
-									và
-									phát triển toàn diện.
-								</p>
+								<p style="color: #0d130e;"><strong>Thời gian học: 20 - 36 tháng</strong></p>
+								<p>• Nhà trường có mở lớp học online kết hợp tại chỗ, tạo điều kiện cho những người ở xa, bận rộn, vừa đi học vừa đi làm</p>
+								<p>Số điện thoại: <a href="tel:0837226566" class="phone-link">0837226566</a></p>
+								<a href="#" title="Xem thêm" class="scroll-link" onclick="showImageModal1(event)">Xem chi tiết</a>
+								</div>
 
-								<p class="intro-text">Địa chỉ: km8 Quan Hoa Cầu Giấy Hà Nội</p>
-								<p>Số điện thoại:<a href="tel:04789542185" class="phone-link">04789542185</a></p>
-								<a href="#contact" title="Xem thêm" class="scroll-link">Xem chi tiết</a>
+								<div class="image-modal" id="imageModal">
+									<div class="modal-content">
+										<button class="close" onclick="closeImageModal()"><i class="fas fa-xmark"></i></button>
+										<img id="modalImage" src="./images/slider.jpg" alt="Ảnh chi tiết" style="width: 100%;">
+									</div>
+								</div>
+								<script>
+									function showImageModal1(event) {
+										event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+										const modal = document.getElementById('imageModal');
+										const image = document.getElementById('modalImage');
+								
+										// Đặt đường dẫn ảnh ở đây
+										image.src = './images/slider.jpg'; // Thay đổi đường dẫn ảnh
+										modal.style.display = 'flex'; // Hiện modal
+									}
+								
+									function closeImageModal() {
+										document.getElementById('imageModal').style.display = 'none'; // Ẩn modal
+									}
+								</script>
+								
+								
 							</div>
 						</div>
 					</div>
@@ -214,15 +374,15 @@
 								<p>Số điện thoại:<a href="tel:04789542185" class="phone-link">04789542185</a></p> -->
 
 								<ul class="list-unstyled number-list">
-									<li>Giáo dục tiểu học: Tập trung vào việc giảng dạy các kiến thức cơ bản như Toán,
+									<li><strong>GIÁO DỤC TIỂU HỌC:</strong> Tập trung vào việc giảng dạy các kiến thức cơ bản như Toán,
 										Tiếng Việt, và các kỹ năng sống.</li>
-									<li>Giáo dục thể chất - thể thao:Đào tạo kỹ năng vận động, thể lực và ý thức rèn
+									<li><strong>GIÁO DỤC THỂ CHẤT - THỂ THAO:</strong> Đào tạo kỹ năng vận động, thể lực và ý thức rèn
 										luyện sức khỏe.
 										<br>Phát triển tinh thần đồng đội và kỹ năng thi đấu thể thao.
 									</li>
-									<li>Sư phạm tiếng Anh:Tập trung vào phương pháp giảng dạy hiện đại, phát âm, ngữ
+									<li><strong>SƯ PHẠM TIẾNG ANH:</strong> Tập trung vào phương pháp giảng dạy hiện đại, phát âm, ngữ
 										pháp và giao tiếp.</li>
-									<li>Sư phạm các môn:
+									<li><strong>SƯ PHẠM CÁC MÔN:</strong>
 										Đào tạo giáo viên chuyên môn ở các lĩnh vực khoa học tự nhiên (Toán, Lý, Hóa,
 										Sinh) và khoa học xã hội (Sử, Địa).
 									</li>
@@ -239,140 +399,317 @@
 										</li> -->
 								</ul>
 
-								<a href="#training-program" title="Xem thêm" class="scroll-link">Xem chi tiết</a>
+								<a href="#" title="Xem thêm" class="scroll-link" onclick="showImageModal2(event)">Xem chi tiết</a>
 							</div>
 							<div class="new-about-image"
 								style="display: flex; justify-content: flex-start; align-items: center;">
-								<img class="img-responsive mx-auto d-block lazy" src="./images/trg.jpg"
+								<img class="img-responsive mx-auto d-block lazy" src="./images/gv.jpg"
 									alt="Công ty Home Health Care"
 									style="height: auto; object-fit: cover; padding-top: 20px;">
 							</div>
-
+							
 						</div>
 					</div>
 				</div>
 			</section>
 		</div>
+		
 		<section class="awe-section-5 wow bounceInUp animated animated" id="training-program">
 			<div class="section_service" style="background-image:url('./images/1.png');">
 				<div class="container" id="element3">
 					<div class="section_service_title text-center fade-in">
 						<!-- <span>Khoá học online</span> -->
-						<h3 class="train">TUYỂN SINH CÁC NGÀNH</h3>
+						<h3 class="train">THÔNG TIN TUYỂN SINH </h3>
 						<!-- <p>Tuyển sinh lớp đào tạo cập nhật kiến thức y khoa “Ứng dụng và bào chế một số vị thuốc,
 							bài thuốc cổ phương thường dùng” </p> -->
 					</div>
 					<div class="row">
+						<!-- SƯ PHẠM TIỂU HỌC -->
 						<div class="col-lg-3 col-md-3 col-sm-6 fade-in" style="animation-delay: 0.8s;">
 							<div class="services-box">
 								<div class="icon">
-									<i class="fa-solid fa-clock"
-										style="width: 75px; height: 75px; color:#ffffff;    padding-top: 17px;"></i>
+									<i class="fa-solid fa-book"
+										style="width: 75px; height: 75px; color:#ffffff; padding-top: 17px;"></i>
 								</div>
 								<h3>SƯ PHẠM TIỂU HỌC</h3>
 								<p>Tập trung vào việc giảng dạy các kiến thức cơ bản như Toán, Tiếng Việt, và các kỹ
-									năng sống. Hình thành nền tảng tư duy, nhân cách và kỹ năng xã hội cho học sinh từ
-									lớp 1 đến lớp 5.</p>
-								<a href="#contact" title="Xem thêm" class="scroll-link">xem thêm</a>
+									năng sống.</p>
+								<a href="#" onclick="showInfo('primaryEducationModal')" title="Xem thêm"
+									class="scroll-link">xem thêm</a>
+							</div>
+						</div>
+						<div id="primaryEducationModal" class="modal" style="display:none;">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal('primaryEducationModal')">&times;</span>
+								<h4>Sư Phạm Tiểu Học</h4>
+								<p>Nội dung:</p>
+								<ul>
+									<li>Giảng dạy các môn học cơ bản: Toán, Tiếng Việt, Khoa học, và Đạo đức.</li>
+									<li>Phát triển kỹ năng sống: giao tiếp, làm việc nhóm, và giải quyết vấn đề.</li>
+									<li>Hỗ trợ xây dựng nhân cách và kỹ năng xã hội: tự tin, tự lập và trách nhiệm.</li>
+									<li>Các hoạt động ngoại khóa: nghệ thuật, thể thao, và các chương trình trải nghiệm
+										thực tế.</li>
+									<li>Thời gian thực hành tại các trường tiểu học để áp dụng lý thuyết vào thực tế
+										giảng dạy.</li>
+								</ul>
+								<p>Thời gian đào tạo: 1.5-2 năm, tùy thuộc vào chương trình học.</p>
+								<p>Đối tượng: Học sinh tốt nghiệp THPT hoặc tương đương, có đam mê với nghề dạy học.</p>
+								<button onclick="closeModal('primaryEducationModal')">Đóng</button>
 							</div>
 						</div>
 
+						<!-- SƯ PHẠM TIẾNG ANH -->
 						<div class="col-lg-3 col-md-3 col-sm-6 fade-in" style="animation-delay: 0.8s;">
 							<div class="services-box">
 								<div class="icon">
-									<i class="fa-solid fa-clock"
-										style="width: 75px; height: 75px; color:#ffffff;    padding-top: 17px;"></i>
+									<i class="fa-solid fa-globe"
+										style="width: 75px; height: 75px; color:#ffffff; padding-top: 17px;"></i>
 								</div>
 								<h3>SƯ PHẠM TIẾNG ANH</h3>
-								<p>Chuẩn bị giáo viên có khả năng giảng dạy tiếng Anh hiệu quả.
-									Tập trung vào phương pháp giảng dạy hiện đại, phát âm, ngữ pháp và giao tiếp.</p>
-								<a href="#contact" title="Xem thêm" class="scroll-link">xem thêm</a>
+								<p>Chương trình đào tạo Sư phạm Tiếng Anh nhằm phát triển khả năng giảng dạy tiếng Anh
+									hiệu quả cho học sinh.
+								</p>
+								<a href="#" onclick="showInfo('englishEducationModal')" title="Xem thêm"
+									class="scroll-link">xem thêm</a>
 							</div>
 						</div>
 
-						<div class="col-lg-3 col-md-3 col-sm-6 fade-in" style="animation-delay: 0.8s;">
-							<div class="services-box">
-								<div class="icon">
-									<i class="fa-solid fa-clock"
-										style="width: 75px; height: 75px; color:#ffffff;    padding-top: 17px;"></i>
-								</div>
-								<h3>SƯ PHẠM TOÁN (TOÁN HỌC) </h3>
-								<p>Đào tạo giáo viên Toán có năng lực giảng dạy từ cấp THCS đến THPT.
-									Phát triển tư duy logic, khả năng giải quyết vấn đề và kỹ năng sư phạm hiệu quả.</p>
-								<a href="#contact" title="Xem thêm" class="scroll-link">xem thêm</a>
+						<div id="englishEducationModal" class="modal" style="display:none;">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal('englishEducationModal')">&times;</span>
+								<h4>Sư Phạm Tiếng Anh</h4>
+								<p>Nội dung chi tiết:</p>
+								<ul>
+									<li><strong>Từ vựng và ngữ pháp:</strong> Học các cấu trúc ngữ pháp và từ vựng cần
+										thiết cho giao tiếp hàng ngày.</li>
+									<li><strong>Kỹ năng giao tiếp:</strong> Phát triển khả năng nghe, nói, đọc và viết
+										thông qua các hoạt động tương tác.</li>
+									<li><strong>Phương pháp giảng dạy:</strong> Được đào tạo về các phương pháp giảng
+										dạy sáng tạo và hiệu quả.</li>
+									<li><strong>Thực hành giảng dạy:</strong> Thực tập tại các trường học để áp dụng lý
+										thuyết vào thực tiễn.</li>
+								</ul>
+								<p><strong>Thời gian đào tạo:</strong> 1.5-2 năm, tùy thuộc vào chương trình học.</p>
+								<p><strong>Đối tượng:</strong> Học sinh tốt nghiệp THPT hoặc tương đương, yêu thích ngôn
+									ngữ và có đam mê dạy học.</p>
+								<button onclick="closeModal('englishEducationModal')">Đóng</button>
 							</div>
 						</div>
+						<!-- SƯ PHẠM TOÁN -->
 						<div class="col-lg-3 col-md-3 col-sm-6 fade-in" style="animation-delay: 0.8s;">
 							<div class="services-box">
 								<div class="icon">
-									<i class="fa-solid fa-clock"
-										style="width: 75px; height: 75px; color:#ffffff;    padding-top: 17px;"></i>
+									<i class="fa-solid fa-calculator"
+										style="width: 75px; height: 75px; color:#ffffff; padding-top: 17px;"></i>
 								</div>
-								<h3>SƯ PHẠM LÝ (VẬT LÝ)</h3>
-								<p>Chuẩn bị giáo viên giảng dạy Vật lý với kiến thức chuyên sâu và phương pháp giảng dạy
-									hiện đại.
-									Kết hợp lý thuyết và thực hành để phát triển khả năng giải thích các hiện tượng tự
-									nhiên.</p>
-								<a href="#contact" title="Xem thêm" class="scroll-link">xem thêm</a>
+								<h3>SƯ PHẠM TOÁN HỌC</h3>
+								<p>Chương trình đào tạo Sư phạm Toán nhằm trang bị cho sinh viên kiến thức vững chắc về toán học 
+								   và kỹ năng giảng dạy hiệu quả từ cấp THCS đến THPT.</p>
+								<a href="#" onclick="showInfo('mathEducationModal')" title="Xem thêm" class="scroll-link">xem thêm</a>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-3 col-sm-6 fade-in" style="animation-delay: 0.8s;">
-							<div class="services-box">
-								<div class="icon">
-									<i class="fa-solid fa-clock"
-										style="width: 75px; height: 75px; color:#ffffff;    padding-top: 17px;"></i>
-								</div>
-								<h3>SƯ PHẠM HOÁ (HOÁ HỌC)</h3>
-								<p>Đào tạo giáo viên Hóa học với kỹ năng truyền đạt kiến thức hóa học và hướng dẫn thí
-									nghiệm.
-									Tập trung vào ứng dụng thực tế và khuyến khích tư duy sáng tạo.</p>
-								<a href="#contact" title="Xem thêm" class="scroll-link">xem thêm</a>
+						
+						<div id="mathEducationModal" class="modal" style="display:none;">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal('mathEducationModal')">&times;</span>
+								<h4>Sư Phạm Toán</h4>
+								<p>Nội dung chi tiết:</p>
+								<ul>
+									<li><strong>Kiến thức toán học:</strong> Học các khái niệm và phương pháp toán học từ cơ bản đến nâng cao.</li>
+									<li><strong>Kỹ năng giảng dạy:</strong> Phát triển khả năng truyền đạt kiến thức một cách dễ hiểu và hiệu quả.</li>
+									<li><strong>Phát triển tư duy logic:</strong> Tăng cường khả năng phân tích và giải quyết vấn đề cho học sinh.</li>
+									<li><strong>Thực hành giảng dạy:</strong> Thực tập tại các trường học, áp dụng lý thuyết vào thực tế giảng dạy.</li>
+								</ul>
+								<p><strong>Thời gian đào tạo:</strong> 1.5-2 năm, tùy thuộc vào chương trình học.</p>
+								<p><strong>Đối tượng:</strong> Học sinh tốt nghiệp THPT hoặc tương đương, yêu thích toán học và có đam mê dạy học.</p>
+								<button onclick="closeModal('mathEducationModal')">Đóng</button>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-3 col-sm-6 fade-in" style="animation-delay: 0.8s;">
-							<div class="services-box">
-								<div class="icon">
-									<i class="fa-solid fa-clock"
-										style="width: 75px; height: 75px; color:#ffffff;    padding-top: 17px;"></i>
-								</div>
-								<h3>SƯ PHẠM SINH (SINH HỌC)</h3>
-								<p>Phát triển giáo viên Sinh học có năng lực giảng dạy lý thuyết và thực hành trong
-									phòng thí nghiệm.
 
-									Nâng cao nhận thức về bảo vệ môi trường và đa dạng sinh học.</p>
-								<a href="#contact" title="Xem thêm" class="scroll-link">xem thêm</a>
-							</div>
-						</div>
+						<!-- SƯ PHẠM LÝ -->
 						<div class="col-lg-3 col-md-3 col-sm-6 fade-in" style="animation-delay: 0.8s;">
 							<div class="services-box">
 								<div class="icon">
-									<i class="fa-solid fa-clock"
-										style="width: 75px; height: 75px; color:#ffffff;    padding-top: 17px;"></i>
+									<i class="fa-solid fa-atom"
+										style="width: 75px; height: 75px; color:#ffffff; padding-top: 17px;"></i>
 								</div>
-								<h3>SƯ PHẠM SỬ (LỊCH SỬ)</h3>
-								<p>Đào tạo giáo viên có khả năng giảng dạy lịch sử một cách hấp dẫn và dễ hiểu.
-									Giúp học sinh hiểu biết về các sự kiện, nhân vật và bài học từ lịch sử dân tộc và
-									thế giới.</p>
-								<a href="#contact" title="Xem thêm" class="scroll-link">xem thêm</a>
+								<h3>SƯ PHẠM VẬT LÝ </h3>
+								<p>Chương trình đào tạo Sư phạm Vật lý nhằm trang bị cho sinh viên kiến thức vững chắc về vật lý 
+								   và kỹ năng giảng dạy hiệu quả cho học sinh từ cấp THCS đến THPT.</p>
+								<a href="#" onclick="showInfo('physicsEducationModal')" title="Xem thêm" class="scroll-link">xem thêm</a>
 							</div>
 						</div>
+						
+						<div id="physicsEducationModal" class="modal" style="display:none;">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal('physicsEducationModal')">&times;</span>
+								<h4>Sư Phạm Vật Lý</h4>
+								<p>Nội dung chi tiết:</p>
+								<ul>
+									<li><strong>Kiến thức vật lý:</strong> Học các nguyên lý và khái niệm cơ bản trong vật lý.</li>
+									<li><strong>Kỹ năng giảng dạy:</strong> Phát triển khả năng truyền đạt kiến thức một cách dễ hiểu và sinh động.</li>
+									<li><strong>Thực hành thí nghiệm:</strong> Thực hiện các thí nghiệm để củng cố lý thuyết và khuyến khích tư duy khoa học.</li>
+									<li><strong>Thực tập giảng dạy:</strong> Tham gia giảng dạy tại các trường học để áp dụng lý thuyết vào thực tiễn.</li>
+								</ul>
+								<p><strong>Thời gian đào tạo:</strong> 1.5-2 năm, tùy thuộc vào chương trình học.</p>
+								<p><strong>Đối tượng:</strong> Học sinh tốt nghiệp THPT hoặc tương đương, yêu thích vật lý và có đam mê dạy học.</p>
+								<button onclick="closeModal('physicsEducationModal')">Đóng</button>
+							</div>
+						</div>
+						<!-- SƯ PHẠM HOÁ -->
 						<div class="col-lg-3 col-md-3 col-sm-6 fade-in" style="animation-delay: 0.8s;">
 							<div class="services-box">
 								<div class="icon">
-									<i class="fa-solid fa-clock"
-										style="width: 75px; height: 75px; color:#ffffff;    padding-top: 17px;"></i>
+									<i class="fa-solid fa-flask"
+										style="width: 75px; height: 75px; color:#ffffff; padding-top: 17px;"></i>
 								</div>
-								<h3>SƯ PHẠM ĐỊA (ĐỊA LÝ)</h3>
-								<p>Đào tạo giáo viên Địa lý với khả năng truyền đạt kiến thức về địa lý tự nhiên và kinh
-									tế - xã hội.
-									Kết hợp sử dụng bản đồ, mô hình và công nghệ để làm sinh động bài giảng.</p>
-								<a href="#contact" title="Xem thêm" class="scroll-link">xem thêm</a>
+								<h3>SƯ PHẠM HOÁ HỌC</h3>
+								<p>Chương trình đào tạo Sư phạm Hóa học nhằm cung cấp cho sinh viên kiến thức vững chắc về hóa học 
+								   và kỹ năng giảng dạy hiệu quả cho học sinh từ cấp THCS đến THPT.</p>
+								<a href="#" onclick="showInfo('chemistryEducationModal')" title="Xem thêm" class="scroll-link">xem thêm</a>
+							</div>
+						</div>
+						<div id="chemistryEducationModal" class="modal" style="display:none;">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal('chemistryEducationModal')">&times;</span>
+								<h4>Sư Phạm Hóa Học</h4>
+								<p>Nội dung chi tiết:</p>
+								<ul>
+									<li><strong>Kiến thức hóa học:</strong> Nắm vững các khái niệm cơ bản và ứng dụng của hóa học trong đời sống.</li>
+									<li><strong>Kỹ năng giảng dạy:</strong> Phát triển khả năng truyền đạt kiến thức một cách sinh động và dễ hiểu.</li>
+									<li><strong>Thực hành thí nghiệm:</strong> Thực hiện các thí nghiệm để củng cố lý thuyết và khuyến khích tư duy khoa học.</li>
+									<li><strong>Thực tập giảng dạy:</strong> Tham gia giảng dạy tại các trường học để áp dụng lý thuyết vào thực tiễn.</li>
+								</ul>
+								<p><strong>Thời gian đào tạo:</strong> 1.5-2 năm, tùy thuộc vào chương trình học.</p>
+								<p><strong>Đối tượng:</strong> Học sinh tốt nghiệp THPT hoặc tương đương, yêu thích hóa học và có đam mê dạy học.</p>
+								<button onclick="closeModal('chemistryEducationModal')">Đóng</button>
+							</div>
+						</div>
+						<!-- SƯ PHẠM SINH -->
+						<div class="col-lg-3 col-md-3 col-sm-6 fade-in" style="animation-delay: 0.8s;">
+							<div class="services-box">
+								<div class="icon">
+									<i class="fa-solid fa-leaf"
+										style="width: 75px; height: 75px; color:#ffffff; padding-top: 17px;"></i>
+								</div>
+								<h3>SƯ PHẠM SINH HỌC</h3>
+								<p>Chương trình đào tạo Sư phạm Sinh học nhằm cung cấp cho sinh viên kiến thức vững chắc về sinh học 
+								   và kỹ năng giảng dạy hiệu quả cho học sinh từ cấp THCS đến THPT.</p>
+								<a href="#" onclick="showInfo('biologyEducationModal')" title="Xem thêm" class="scroll-link">xem thêm</a>
+							</div>
+						</div>
+						
+						<div id="biologyEducationModal" class="modal" style="display:none;">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal('biologyEducationModal')">&times;</span>
+								<h4>Sư Phạm Sinh Học</h4>
+								<p>Nội dung chi tiết:</p>
+								<ul>
+									<li><strong>Kiến thức sinh học:</strong> Nắm vững các khái niệm và nguyên lý cơ bản trong sinh học.</li>
+									<li><strong>Kỹ năng giảng dạy:</strong> Phát triển khả năng truyền đạt kiến thức một cách sinh động và dễ hiểu.</li>
+									<li><strong>Thực hành thí nghiệm:</strong> Thực hiện các thí nghiệm sinh học để củng cố lý thuyết và khuyến khích tư duy khoa học.</li>
+									<li><strong>Thực tập giảng dạy:</strong> Tham gia giảng dạy tại các trường học để áp dụng lý thuyết vào thực tiễn.</li>
+								</ul>
+								<p><strong>Thời gian đào tạo:</strong> 1.5-2 năm, tùy thuộc vào chương trình học.</p>
+								<p><strong>Đối tượng:</strong> Học sinh tốt nghiệp THPT hoặc tương đương, yêu thích sinh học và có đam mê dạy học.</p>
+								<button onclick="closeModal('biologyEducationModal')">Đóng</button>
+							</div>
+						</div>
+						<!-- SƯ PHẠM SỬ -->
+						<div class="col-lg-3 col-md-3 col-sm-6 fade-in" style="animation-delay: 0.8s;">
+							<div class="services-box">
+								<div class="icon">
+									<i class="fa-solid fa-history"
+										style="width: 75px; height: 75px; color:#ffffff; padding-top: 17px;"></i>
+								</div>
+								<h3>SƯ PHẠM LỊCH  SỬ</h3>
+								<p>Chương trình đào tạo Sư phạm Lịch sử nhằm trang bị cho sinh viên kiến thức sâu rộng về lịch sử 
+								   và kỹ năng giảng dạy hiệu quả cho học sinh từ cấp THCS đến THPT.</p>
+								<a href="#" onclick="showInfo('historyEducationModal')" title="Xem thêm" class="scroll-link">xem thêm</a>
+							</div>
+						</div>
+						
+						<div id="historyEducationModal" class="modal" style="display:none;">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal('historyEducationModal')">&times;</span>
+								<h4>Sư Phạm Lịch Sử</h4>
+								<p>Nội dung chi tiết:</p>
+								<ul>
+									<li><strong>Kiến thức lịch sử:</strong> Nắm vững các sự kiện, nhân vật và giai đoạn quan trọng trong lịch sử.</li>
+									<li><strong>Kỹ năng giảng dạy:</strong> Phát triển khả năng truyền đạt kiến thức một cách sinh động và hấp dẫn.</li>
+									<li><strong>Phân tích và đánh giá:</strong> Học cách phân tích các sự kiện lịch sử và rút ra bài học cho hiện tại.</li>
+									<li><strong>Thực tập giảng dạy:</strong> Tham gia giảng dạy tại các trường học để áp dụng lý thuyết vào thực tiễn.</li>
+								</ul>
+								<p><strong>Thời gian đào tạo:</strong> 1.5-2 năm, tùy thuộc vào chương trình học.</p>
+								<p><strong>Đối tượng:</strong> Học sinh tốt nghiệp THPT hoặc tương đương, yêu thích lịch sử và có đam mê dạy học.</p>
+								<button onclick="closeModal('historyEducationModal')">Đóng</button>
+							</div>
+						</div>
+						<!-- SƯ PHẠM MẦM NON -->
+						<div class="col-lg-3 col-md-3 col-sm-6 fade-in" style="animation-delay: 0.8s;">
+							<div class="services-box">
+								<div class="icon">
+									<i class="fa-solid fa-child"
+										style="width: 75px; height: 75px; color:#ffffff; padding-top: 17px;"></i>
+								</div>
+								<h3>SƯ PHẠM MẦM NON</h3>
+								<p>Đào tạo giáo viên mầm non với phương pháp giảng dạy sáng tạo và phát triển toàn diện
+									cho trẻ.
+								</p>
+								<a href="#" onclick="showInfo('kindergartenEducationModal')" title="Xem thêm"
+									class="scroll-link">xem thêm</a>
+							</div>
+						</div>
+						<div id="kindergartenEducationModal" class="modal" style="display:none;">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal('kindergartenEducationModal')">&times;</span>
+								<h4>Sư Phạm Mầm Non</h4>
+								<p>Nội dung chi tiết:</p>
+								<ul>
+									<li><strong>Phát triển kỹ năng xã hội:</strong> Giúp trẻ hòa nhập và giao tiếp hiệu
+										quả với bạn bè và giáo viên.</li>
+									<li><strong>Phương pháp giảng dạy sáng tạo:</strong> Sử dụng trò chơi, âm nhạc, và
+										nghệ thuật để kích thích sự sáng tạo và ham học hỏi của trẻ.</li>
+									<li><strong>Giáo dục thể chất:</strong> Thực hiện các hoạt động thể chất nhằm phát
+										triển sức khỏe và thể lực cho trẻ.</li>
+									<li><strong>Giáo dục cảm xúc:</strong> Hỗ trợ trẻ nhận diện, thể hiện cảm xúc và xây
+										dựng lòng tự tin.</li>
+									<li><strong>Chương trình học thực tế:</strong> Kết hợp lý thuyết và thực hành thông
+										qua các hoạt động ngoại khóa, chuyến đi thực tế và các sự kiện văn hóa.</li>
+									<li><strong>Thực hành giảng dạy:</strong> Sinh viên sẽ có cơ hội thực tập tại các
+										trường mầm non để áp dụng lý thuyết vào thực tế giáo dục.</li>
+								</ul>
+								<p><strong>Thời gian đào tạo:</strong> 1.5-2 năm, tùy thuộc vào chương trình học và yêu
+									cầu của từng trường.</p>
+								<p><strong>Đối tượng:</strong> Học sinh tốt nghiệp THPT hoặc tương đương, có đam mê với
+									nghề giáo dục, yêu trẻ và mong muốn góp phần vào sự phát triển của thế hệ tương lai.
+								</p>
+								<button onclick="closeModal('kindergartenEducationModal')">Đóng</button>
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</section>
+		<script>
+		function showInfo(modalId) {
+			document.getElementById(modalId).style.display = "flex";
+		}
+
+		function closeModal(modalId) {
+			document.getElementById(modalId).style.display = "none";
+		}
+
+		window.onclick = function (event) {
+			const modals = document.querySelectorAll(".modal");
+			modals.forEach((modal) => {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			});
+		}
+	</script>
 		<!-- <section class="awe-section-6 wow bounceInUp animated animated"> -->
 		<!-- <div class="section_customer "> -->
 		<!-- <div class="container"> -->
@@ -527,34 +864,36 @@
 				</div>
 			</section>
 			 đảm bảo chất lượng  -->
-		<section class="main-container">
-			<div class="content-wrapper">
-				<div class="gallery-container">
-					<!-- Row 1 -->
-					<div class="gallery-row">
-						<div class="gallery-item">
-							<img src="./images/gv.jpg" alt="Students sitting" class="gallery-img">
+			 <section class="main-container">
+				<div class="content-wrapper">
+					<div class="gallery-container">
+						<!-- Row 1 -->
+						<div class="gallery-row">
+							<div class="gallery-item">
+								<img src="./images/hs.png" alt="Students sitting" class="gallery-img">
+							</div>
+							<div class="gallery-item">
+								<img src="./images/21.jpg" alt="Students at desk" class="gallery-img">
+							</div>
+							<div class="gallery-item">
+								<img src="./images/be.jpg" alt="Stage performance" class="gallery-img">
+							</div>
 						</div>
-						<div class="gallery-item">
-							<img src="./images/trg.jpg" alt="Students at desk" class="gallery-img">
+						<div class="gallery-row">
+							<div class="gallery-item">
+								<img src="./images/co.jpeg" alt="School building" class="gallery-img">
+							</div>
+							<div class="gallery-item">
+								<img src="./images/clb.jpg" alt="Students outside" class="gallery-img">
+							</div>
+							<div class="gallery-item">
+								<img src="./images/20.webp" alt="Stage performance" class="gallery-img">
+							</div>
 						</div>
-						<div class="gallery-item">
-							<img src="./images/be.jpg" alt="Stage performance" class="gallery-img">
-						</div>
-					</div>
-
-					<!-- Row 2 -->
-					<div class="gallery-row">
-						<div class="gallery-item large">
-							<img src="./images/nhac.jpg" alt="School building" class="gallery-img">
-						</div>
-						<div class="gallery-item large">
-							<img src="./images/clb.jpg" alt="Students outside" class="gallery-img">
-						</div>
+	
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 		<!-- <section class="nd-section">
 			<div class="wpb_column vc_column_container vc_col-sm-12" id="quality">
 				<div class="section_service_title text-center fade-in-blog">
@@ -847,18 +1186,32 @@
 						<div class="col-md-6">
 							<div class="form-container animate-right">
 								<h1 style="font-weight: 600; font-size: 42px; color:#0174CF">QUYỀN LỢI CỦA HỌC VIÊN</h1>
-								<p style="color:#0174CF">Trải qua hơn 16 năm phát triển, chúng tôi tự hào đã đào tạo và
-									phát triển nhiều thế hệ sinh viên thành công. Với đội ngũ giảng viên giàu kinh
-									nghiệm và cơ sở vật chất hiện đại, chúng tôi cam kết mang đến môi trường học tập
-									chất lượng cho học viên.</p>
-								<form method="POST"
+								<p style="color:#0174CF">
+									Trải qua hơn 16 năm phát triển, chúng tôi tự hào đã đào tạo và phát triển nhiều thế
+									hệ sinh viên thành công.
+									Với đội ngũ giảng viên giàu kinh nghiệm và cơ sở vật chất hiện đại, chúng tôi cam
+									kết mang đến môi trường học tập chất lượng cho học viên.
+								</p>
+								<form id="registrationForm" method="POST"
 									action="https://script.google.com/macros/s/AKfycbwqKMJCK_0eOeLEJfaDXvZ24Y5-P9S5UanpCUgMV-j4MZlymhG0frpRNhct_8Hnurzp/exec">
 									<input type="text" name="hoten" placeholder="Họ và tên" required>
 									<input type="tel" name="sodienthoai" placeholder="Số điện thoại" required>
 									<input type="email" name="diachiemail" placeholder="Email" required>
-									<textarea name="massage" placeholder="Massage" required></textarea>
+									<select id="major" name="major" style="color: rgba(51, 51, 51, 0.7);"  >
+										<option value="spham">Các ngành học</option>
+										<option value="spham_tieuhoc">Sư Phạm Tiểu Học</option>
+										<option value="spham_toan">Sư Phạm Toán (Toán Học)</option>
+										<option value="spham_ly">Sư Phạm Lý (Vật Lý)</option>
+										<option value="spham_hoa">Sư Phạm Hóa (Hóa Học)</option>
+										<option value="spham_sinh">Sư Phạm Sinh (Sinh Học)</option>
+										<option value="spham_su">Sư Phạm Sử (Lịch Sử)</option>
+										<option value="spham_mamnon">Sư Phạm Mầm Non</option>
+									</select>
 									<input type="submit" value="Gửi yêu cầu">
 								</form>
+								<p id="successMessage" style="color: green; display: none; font-weight: bold; margin-top: 10px;">
+									✅ Đăng ký thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.
+								</p>								
 							</div>
 						</div>
 					</div>
@@ -889,11 +1242,10 @@
 									</p>
 									<p>Email: cd@.gov.vn
 									</p> -->
-									<p>
-										Trường Cao đẳng Mầm non XYZ là cơ sở đào tạo giáo viên mầm non hàng đầu,
-										với hơn 20 năm kinh nghiệm và đội ngũ giảng viên giàu chuyên môn.
-										Cơ sở vật chất hiện đại, cam kết hỗ trợ việc làm sau tốt nghiệp.
-									</p>
+									•	Địa chỉ tiếp nhận & nộp hồ sơ: Ban tuyển sinh<br>
+•	Phòng 201, số 68, Lê Hồng Phong, Thành phố Bắc Giang<br>
+•	Trường Xiếc Việt Nam, Khu Văn hóa nghệ thuật, Hồ Tùng Mậu, Cầu Giấy, Hà nội
+
 								</div>
 							</div>
 						</div>
@@ -906,7 +1258,7 @@
 									<a href="#about-us" class="scroll-link">Giới thiệu</a>
 									<a href="#training-program" class="scroll-link">Chương trình đào tạo</a>
 									<!-- <a href="#quality" class="scroll-link">Chất lượng</a> -->
-									<a href="#contact" class="scroll-link">Quyền Lợi</a>
+									<a href="#contact" class="scroll-link">Quyền lợi của học viên</a>
 									<a href="#contact" class="scroll-link">Liên hệ</a>
 								</div>
 							</div>
@@ -1452,6 +1804,32 @@
 				}
 
 				requestAnimationFrame(animation); // Bắt đầu hoạt động
+			});
+		});
+	</script>
+	<script>
+		document.getElementById("registrationForm").addEventListener("submit", function (event) {
+			event.preventDefault(); // Ngăn chặn reload trang
+			
+			var form = event.target;
+			var formData = new FormData(form);
+	
+			fetch(form.action, {
+				method: "POST",
+				body: formData
+			})
+			.then(response => response.json()) 
+			.then(data => {
+				if (data.result === "success") {
+					document.getElementById("successMessage").style.display = "block";
+					form.reset(); // Reset form sau khi gửi
+				} else {
+					alert("Có lỗi xảy ra. Vui lòng thử lại!");
+				}
+			})
+			.catch(error => {
+				console.error("Lỗi:", error);
+				alert("Lỗi kết nối! Vui lòng thử lại sau.");
 			});
 		});
 	</script>
