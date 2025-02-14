@@ -876,6 +876,7 @@ img {
 	display: block;
 	max-width: 100%;
 	height: auto
+	padding-top :20px;
 }
 .img-rounded {
 	border-radius: 6px
