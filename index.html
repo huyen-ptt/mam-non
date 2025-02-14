@@ -182,8 +182,9 @@
 					</div>
 				</div>
 			</div>
-	</div>
+		
 	</header>
+</div>
 	<section class="banner-row">
 		<div class="banner-item">
 			<img src="./images/slider2.jpg" alt="Tuyển sinh cao đẳng mầm non">
@@ -230,29 +231,7 @@
 									tabindex="0">Xem chi tiết</a>
 							</div>
 
-							<div class="image-modal" id="imageModal">
-								<div class="modal-content">
-									<button class="close" onclick="closeImageModal()">&times;</button>
-									<img id="modalImage" src="./images/text1.jpg" alt="Ảnh chi tiết">
-								</div>
-							</div>
-							<script>
-								function showImageModal(event) {
-									event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
-									const modal = document.getElementById('imageModal');
-									const image = document.getElementById('modalImage');
-									image.src = './images/text1.jpg'; // Đặt đường dẫn ảnh
-									modal.style.display = 'flex'; // Hiện modal
-								}
-
-								function closeImageModal(event) {
-									const modal = document.getElementById('imageModal');
-									if (event) {
-										event.preventDefault(); // Ngăn chặn hành vi mặc định nếu cần
-									}
-									modal.style.display = 'none'; // Ẩn modal
-								}
-							</script>
+							
 						</div>
 
 
@@ -297,25 +276,7 @@
 								<a href="#" title="Xem thêm" class="scroll-link" onclick="showImageModal1(event)">Xem
 									chi tiết</a>
 							</div>
-							<div class="image-modal" id="imageModal1">
-								<div class="modal-content">
-									<button class="close" onclick="closeImageModal1()">&times;</button>
-									<img id="modalImage1" src="./images/text1.jpg" alt="Ảnh chi tiết">
-								</div>
-							</div>
-							<script>
-								function showImageModal1(event) {
-									event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
-									const modal = document.getElementById('imageModal1');
-									const image = document.getElementById('modalImage1');
-									image.src = './images/text1.jpg'; // Đặt đường dẫn ảnh
-									modal.style.display = 'flex'; // Hiện modal
-								}
-
-								function closeImageModal1() {
-									document.getElementById('imageModal1').style.display = 'none'; // Ẩn modal
-								}
-							</script>
+							
 
 
 						</div>
@@ -379,38 +340,81 @@
 							<a href="#" title="Xem thêm" class="scroll-link" onclick="showImageModal2(event)">Xem chi
 								tiết</a>
 						</div>
-						<div class="image-modal" id="imageModal2">
-							<div class="modal-content">
-								<button class="close" onclick="closeImageModal2()">&times;</button>
-								<img id="modalImage2" src="./images/text1.jpg" alt="Ảnh chi tiết">
-							</div>
-						</div>
-						<script>
-							function showImageModal2(event) {
-								event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
-								const modal = document.getElementById('imageModal2');
-								const image = document.getElementById('modalImage2');
-								image.src = './images/text1.jpg'; // Đặt đường dẫn ảnh
-								modal.style.display = 'flex'; // Hiện modal
-							}
-
-							function closeImageModal2() {
-								document.getElementById('imageModal2').style.display = 'none'; // Ẩn modal
-							}
-						</script>
-						<div class="new-about-image"
-							style="display: flex; justify-content: flex-start; align-items: center;">
-							<img class="img-responsive mx-auto d-block lazy" src="./images/gv.jpg"
-								alt="Công ty Home Health Care"
-								style="height: auto; object-fit: cover; padding-top: 20px;">
-						</div>
+						
+						
 
 					</div>
 				</div>
 			</div>
 		</section>
 	</div>
+	<div class="image-modal" id="imageModal2">
+		<div class="modal-content">
+			<button class="close" onclick="closeImageModal2()">&times;</button>
+			<img id="modalImage2" src="./images/text1.jpg" alt="Ảnh chi tiết">
+		</div>
+	</div>
+	<script>
+		function showImageModal2(event) {
+			event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+			const modal = document.getElementById('imageModal2');
+			const image = document.getElementById('modalImage2');
+			image.src = './images/text1.jpg'; // Đặt đường dẫn ảnh
+			modal.style.display = 'flex'; // Hiện modal
+		}
 
+		function closeImageModal2() {
+			document.getElementById('imageModal2').style.display = 'none'; // Ẩn modal
+		}
+	</script>
+	<div class="image-modal" id="imageModal1">
+		<div class="modal-content">
+			<button class="close" onclick="closeImageModal1()">&times;</button>
+			<img id="modalImage1" src="./images/text1.jpg" alt="Ảnh chi tiết">
+		</div>
+	</div>
+	<script>
+		function showImageModal1(event) {
+			event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+			const modal = document.getElementById('imageModal1');
+			const image = document.getElementById('modalImage1');
+			image.src = './images/text1.jpg'; // Đặt đường dẫn ảnh
+			modal.style.display = 'flex'; // Hiện modal
+		}
+
+		function closeImageModal1() {
+			document.getElementById('imageModal1').style.display = 'none'; // Ẩn modal
+		}
+	</script>
+	<div class="image-modal" id="imageModal">
+		<div class="modal-content">
+			<button class="close" onclick="closeImageModal()">&times;</button>
+			<img id="modalImage" src="./images/text1.jpg" alt="Ảnh chi tiết">
+		</div>
+	</div>
+	<script>
+		function showImageModal(event) {
+			event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+			const modal = document.getElementById('imageModal');
+			const image = document.getElementById('modalImage');
+			image.src = './images/text1.jpg'; // Đặt đường dẫn ảnh
+			modal.style.display = 'flex'; // Hiện modal
+		}
+
+		function closeImageModal(event) {
+			const modal = document.getElementById('imageModal');
+			if (event) {
+				event.preventDefault(); // Ngăn chặn hành vi mặc định nếu cần
+			}
+			modal.style.display = 'none'; // Ẩn modal
+		}
+	</script>
+	<div class="new-about-image"
+		style="display: flex; justify-content: flex-start; align-items: center;">
+		<img class="img-responsive mx-auto d-block lazy" src="./images/gv.jpg"
+			alt="Công ty Home Health Care"
+			style="height: auto; object-fit: cover; padding-top: 20px;">
+	</div>
 	<section class="awe-section-5 wow bounceInUp animated animated" id="training-program">
 		<div class="section_service" style="background-image:url('./images/1.png');">
 			<div class="container" id="element3">

@@ -3,6 +3,8 @@ body {
 	font-size: 15px;
 	background: #f5f5f5;
 	line-height: 1.6em;
+	margin: 0; /* Xóa margin mặc định */
+    overflow-x: hidden; /* Ẩn overflow theo chiều ngang */
 }
 
 h2,
