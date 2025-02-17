@@ -3135,3 +3135,7 @@ img.emoji {
     align-items: center;
   }
 }
+.close-menu {
+    pointer-events: auto;
+}
+

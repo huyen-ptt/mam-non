@@ -17186,7 +17186,7 @@ ul.header-info-right li a {
 	.section_service .services-box {
 		margin-top: 50px;
 		margin-bottom: 10px;
-                height:50px;
+                height:250px;
 	}
 }
 
@@ -18414,12 +18414,14 @@ div#page-404 {
 
 
 .mm-close .mm-toggle {
-	position: absolute;
+	/* position: absolute; */
 	/* Đặt vị trí tuyệt đối cho nút */
-	top: 10px;
+	/* top: 10px; */
 	/* Khoảng cách từ trên cùng */
-	right: 10px;
+	/* right: 10px; */
 	/* Khoảng cách từ bên phải */
+	/* justify-content: end; */
+	
 	background: none;
 	/* Không nền */
 	border: none;
