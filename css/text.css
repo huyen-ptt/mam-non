@@ -2812,7 +2812,7 @@ img.emoji {
     .banner-item img {
         width: 100%;
         /* Make images responsive */
-        height: auto;
+        height: 265px;
         /* Maintain aspect ratio */
         border-radius: 8px;
         /* Optional: Rounded corners */
