@@ -78,24 +78,24 @@
 									<ul id="nav" class="hidden-xs" style="list-style: none; padding: 0; margin: 0;">
 										<li id="menu-item-80" class="menu-item">
 											<a href="#about-us" class="scroll-link"
-												style="color:#ffffff; font-weight: 900;">Giới
+												style="color:#ffffff;">Giới
 												thiệu</a>
 										</li>
 										<li id="menu-item-84" class="menu-item">
-											<a href="#training-program" style="color:#ffffff; font-weight: 900;"
+											<a href="#training-program" style="color:#ffffff;"
 												class="scroll-link">Tuyển
 												sinh các ngành</a>
 										</li>
 										<li id="menu-item-87" class="menu-item">
 											<a href="#contact" class="scroll-link"
-												style="color:#ffffff; font-weight: 900;">Quyền lợi học viên</a>
+												style="color:#ffffff;">Quyền lợi học viên</a>
 										</li>
 										<!-- <li id="menu-item-88" class="menu-item">
 											<a href="#interest" class="scroll-link"  style="color:#ffffff;">Quyền lợi</a>
 										</li> -->
 
 									</ul>
-									<div class="contact">
+									<div class="contact" style="margin-left:10px;">
 										<a href="#" class="button" onclick="showModal(event)">Đăng ký</a>
 
 										<div class="modal" id="registrationModal" style="display: none;">
@@ -109,7 +109,7 @@
 															<label for="fullname">Họ và tên</label>
 															<input type="text" id="fullname" placeholder="Họ và tên"
 																required>
-														</div>x
+														</div>
 													</div>
 													<div class="form-row">
 														<div class="form-group">
@@ -189,18 +189,19 @@
 			<a href="#about-us" title="Xem thêm" class="scroll-link">Xem chi tiết</a>
 		</div>
 		<div class="banner-item">
-			<img src="./images/slider1.jpg" alt="Tuyển sinh đại học mầm non">
+			<img src="./images/banner2.jfif" alt="Tuyển sinh đại học mầm non">
 			<h3>ĐẠI HỌC MẦM NON</h3>
 			<!-- <p>Tự hào truyền thống - Vững chắc tương lai</p> -->
 			<a href="#why-us" title="Xem thêm" class="scroll-link">Xem chi tiết</a>
 		</div>
 		<div class="banner-item">
-			<img src="./images/slider.jpg" alt="Tuyển sinh ngành khác">
+			<img src="./images/banner3.jfif" alt="Tuyển sinh ngành khác">
 			<h3>NGÀNH KHÁC</h3>
 			<!-- <p>Tự hào truyền thống - Vững chắc tương lai</p> -->
 			<a href="#about-dff" title="Xem thêm" class="scroll-link">Xem chi tiết</a>
 		</div>
 	</section>
+	
 
 	<div class="info">
 		<section class="" id="about-us"
@@ -210,7 +211,7 @@
 				<div class="container">
 					<div class="row" id="element1">
 						<div class="col-lg-6 col-md-6 col-sm-12 order-1 new-about-content">
-							<h3 class="university-name">ĐẠI HỌC MẦM NON</h3>
+							<h3 class="university-name">CAO ĐẲNG MẦM NON</h3>
 							<p style="font-size: 20px;"><strong>PHẠM VI TUYỂN SINH:</strong></p>
 							<p style="font-weight: normal; font-size: 20px;">TUYỂN SINH TRÊN TOÀN QUỐC</p>
 							<div style="text-align: left;">
@@ -234,7 +235,7 @@
 
 						<div class="col-lg-6 col-md-6 col-sm-12 about-content " id="image1"
 							style="display: flex; justify-content: center; align-items: center; height: 100%;">
-							<img class="img-responsive mx-auto d-block lazy" src="./images/15.png"
+							<img class="img-responsive mx-auto d-block lazy" src="./images/gt1.jpg"
 								alt="Công ty Home Health Care" style="width: 100%; height: 100%; object-fit: cover; padding-top: 20px;">
 						</div>
 					</div>
@@ -344,7 +345,7 @@
 			</div>
 		</section>
 	</div>
-	<div class="image-modal" id="imageModal2">
+	<div class="image-modal" id="imageModal2" onclick="closeImageModal2(event)">
 		<div class="modal-content">
 			<button class="close" onclick="closeImageModal2()">&times;</button>
 			<img id="modalImage2" src="./images/text1.jpg" alt="Ảnh chi tiết">
@@ -358,12 +359,12 @@
 			image.src = './images/text1.jpg'; // Đặt đường dẫn ảnh
 			modal.style.display = 'flex'; // Hiện modal
 		}
-
+	
 		function closeImageModal2() {
 			document.getElementById('imageModal2').style.display = 'none'; // Ẩn modal
 		}
 	</script>
-	<div class="image-modal" id="imageModal1">
+	<div class="image-modal" id="imageModal1" onclick="closeImageModal1(event)">
 		<div class="modal-content">
 			<button class="close" onclick="closeImageModal1()">&times;</button>
 			<img id="modalImage1" src="./images/text1.jpg" alt="Ảnh chi tiết">
@@ -382,7 +383,7 @@
 			document.getElementById('imageModal1').style.display = 'none'; // Ẩn modal
 		}
 	</script>
-	<div class="image-modal" id="imageModal">
+	<div class="image-modal" id="imageModal" onclick="closeImageModal(event)">
 		<div class="modal-content">
 			<button class="close" onclick="closeImageModal()">&times;</button>
 			<img id="modalImage" src="./images/text1.jpg" alt="Ảnh chi tiết">
@@ -405,12 +406,12 @@
 			modal.style.display = 'none'; // Ẩn modal
 		}
 	</script>
-	<div class="new-about-image"
+	<!-- <div class="new-about-image"
 		style="display: flex; justify-content: flex-start; align-items: center;">
 		<img class="img-responsive mx-auto d-block lazy" src="./images/gv.jpg"
 			alt="Công ty Home Health Care"
 			style="height: auto; object-fit: cover; padding-top: 20px;">
-	</div>
+	</div> -->
 	<section class="awe-section-5 wow bounceInUp animated animated" id="training-program">
 		<div class="section_service" style="background-image:url('./images/1.png');">
 			<div class="container" id="element3">
@@ -1178,7 +1179,7 @@
 					</div>
 				</div>
 			</section> -->
-	<footer class="footer">
+	<footer class="footer" style="background-color: #67afe8;">
 		<section class="register-section" id="contact">
 			<div class="container">
 				<div class="row">

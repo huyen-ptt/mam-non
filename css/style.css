@@ -17,7 +17,7 @@ a {
 }
 
 a:hover {
-	/* color: #59ca6d; */
+	/* color: #01569d; */
 	text-decoration: none;
 }
 
@@ -1601,7 +1601,7 @@ ul.level1 {
 #nav>li:hover>a {
 	position: relative;
 	z-index: 1;
-	color: #59ca6d;
+	color: #01569d;
 }
 
 /* 2nd level only */
@@ -6527,7 +6527,7 @@ article.blog_entry {
 	letter-spacing: 1px !important;
 	display: inline-block;
 	border: none;
-	background: #59ca6d;
+	background: #01569d;
 	border-radius: 0px;
 }
 
@@ -7180,7 +7180,7 @@ article.blog_entry {
 	margin: 0 5px 0 5px;
 	color: #aaa;
 	font-size: 16px;
-	color: #59ca6d;
+	color: #01569d;
 	font-weight: 500;
 }
 
@@ -13441,7 +13441,7 @@ footer a {
 }
 
 footer a:hover {
-	color: #59ca6d;
+	color: #01569d;
 }
 
 footer p {
@@ -16635,7 +16635,7 @@ ul.header-info-right li {
 
 .assetBlock i,
 ul.header-info-right li i {
-	color: #59ca6d !important;
+	color: #01569d !important;
 	font-size: 19px;
 	padding-left: 5px;
 }
@@ -16646,7 +16646,7 @@ ul.header-info-right li a {
 	padding: 14px 15px;
 	font-size: 13px;
 	/* text-transform: uppercase; */
-	background-color: #59ca6d;
+	background-color: #01569d;
 }
 
 .fl-nav-menu nav ul {
@@ -16857,7 +16857,7 @@ ul.header-info-right li a {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 13px;
-	color: #59ca6d
+	color: #01569d
 }
 
 .section_professional .single-box-item a:hover,
@@ -16866,7 +16866,7 @@ ul.header-info-right li a {
 }
 
 .section_professional .single-box-item:hover {
-	background-color: #59ca6d
+	background-color: #01569d
 }
 
 .section_professional .single-box-item:hover h3,
@@ -16877,7 +16877,7 @@ ul.header-info-right li a {
 
 .section_professional .single-box-item a:hover {
 	color: #fff;
-	background-color: #59ca6d;
+	background-color: #01569d;
 }
 
 
@@ -16895,7 +16895,7 @@ ul.header-info-right li a {
 }
 
 .section_about .about-content span {
-	/* color:#59ca6d; */
+	/* color:#01569d; */
 	font-size: 20px !important;
 	text-align: center;
 	text-transform: uppercase;
@@ -17018,7 +17018,7 @@ ul.header-info-right li a {
 }
 
 .section_why .about-content span {
-	color: #59ca6d;
+	color: #01569d;
 	font-size: 14px;
 	text-transform: uppercase;
 	display: block
@@ -17083,7 +17083,7 @@ ul.header-info-right li a {
 }
 
 .section_why .about-content .why-list-item .why-item-elementor .why-item-content h3 {
-	color: #59ca6d;
+	color: #01569d;
 	font-size: 18px;
 	font-weight: 600;
 	margin-bottom: 5px
@@ -17263,7 +17263,7 @@ ul.header-info-right li a {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 13px;
-	color: #59ca6d
+	color: #01569d
 }
 
 .section_service .services-box a:hover,
@@ -17301,7 +17301,7 @@ ul.header-info-right li a {
 }
 
 .section_customer {
-	background-color: #59ca6d;
+	background-color: #01569d;
 	padding: 40px 0
 }
 
@@ -17406,7 +17406,7 @@ ul.header-info-right li a {
 }
 
 .section_blogs .section_service_title span {
-	color: #59ca6d;
+	color: #01569d;
 	font-size: 14px;
 	text-transform: uppercase;
 	display: block
@@ -17432,7 +17432,7 @@ ul.header-info-right li a {
 
 .section_blogs .section_service_title h3 a:hover,
 .section_blogs .section_service_title h3 a:focus {
-	color: #59ca6d
+	color: #01569d
 }
 
 .section_blogs .section_service_title p {
@@ -17562,7 +17562,7 @@ ul.header-info-right li a {
 	text-transform: uppercase;
 	font-size: 13px;
 	font-weight: 500;
-	color: #59ca6d
+	color: #01569d
 }
 
 .section_blogs .cleanza-item-blogs a.readmore:hover,
@@ -17575,7 +17575,7 @@ ul.header-info-right li a {
 }
 
 .section_blogs .cleanza-item-blogs:hover h3 a {
-	color: #59ca6d
+	color: #01569d
 }
 
 footer.footer {
@@ -17591,7 +17591,7 @@ footer.footer .subscribe {
 	padding-top: 20px;
 	padding-left: 35px;
 	margin-top: -195px;
-	background-color: #59ca6d;
+	background-color: #01569d;
 	padding-right: 35px;
 }
 
@@ -17787,9 +17787,9 @@ footer.footer .subscribe .mailchimp-alerts .mailchimp-submitting a:focus {
 	height: 50px;
 	text-align: center;
 	line-height: 46px;
-	border: 1px dashed #59ca6d;
+	border: 1px dashed #01569d;
 	border-radius: 50%;
-	color: #59ca6d;
+	color: #01569d;
 	-webkit-transition: 0.5s;
 	transition: 0.5s
 }
@@ -17818,7 +17818,7 @@ footer.footer .subscribe .mailchimp-alerts .mailchimp-submitting a:focus {
 
 .page-contacts .col-lg-4 .contact-box .icon i,
 .page-contacts .col-lg-4 .contact-box .icon i {
-	fill: #59ca6d !important;
+	fill: #01569d !important;
 	font-size: 22px;
 }
 
@@ -17847,7 +17847,7 @@ footer.footer .subscribe .mailchimp-alerts .mailchimp-submitting a:focus {
 .page-contacts .col-lg-4 .contact-box .content p:focus,
 .page-contacts .col-lg-4 .contact-box .content a:hover,
 .page-contacts .col-lg-4 .contact-box .content a:focus {
-	color: #59ca6d
+	color: #01569d
 }
 
 .page-contacts .col-lg-4 .contact-box:hover {
@@ -17858,8 +17858,8 @@ footer.footer .subscribe .mailchimp-alerts .mailchimp-submitting a:focus {
 }
 
 .page-contacts .col-lg-4 .contact-box:hover .icon {
-	border-color: #59ca6d;
-	background-color: #59ca6d
+	border-color: #01569d;
+	background-color: #01569d
 }
 
 .page-contacts .col-lg-4 .contact-box:hover .icon i,
@@ -17995,7 +17995,7 @@ footer.footer .subscribe .mailchimp-alerts .mailchimp-submitting a:focus {
 }
 
 .page-faq .product-fpt-with-stick-tab .panel-group .panel-default .panel-heading:hover {
-	background-color: #59ca6d
+	background-color: #01569d
 }
 
 .page-faq .product-fpt-with-stick-tab .panel-group .panel-default .panel-heading:hover a {
@@ -18013,7 +18013,7 @@ footer.footer .subscribe .mailchimp-alerts .mailchimp-submitting a:focus {
 
 .page-faq .product-fpt-with-stick-tab .panel-group .panel-default .panel-body p a {
 	font-weight: 500;
-	color: #59ca6d
+	color: #01569d
 }
 
 .page-faq .product-fpt-with-stick-tab .panel-group .panel-default .panel-body p a:hover,
@@ -18108,7 +18108,7 @@ footer.footer .subscribe .mailchimp-alerts .mailchimp-submitting a:focus {
 
 .section-commitment .nav-tabs li a.active,
 .section-commitment .nav-tabs li a:hover {
-	color: #59ca6d
+	color: #01569d
 }
 
 .section-commitment .tab-content {
@@ -18154,7 +18154,7 @@ footer.footer .subscribe .mailchimp-alerts .mailchimp-submitting a:focus {
 }
 
 .section-commitment .tab-content h6 span {
-	color: #59ca6d
+	color: #01569d
 }
 
 .section-commitment .tab-content .marker-list {
@@ -18197,7 +18197,7 @@ footer.footer .subscribe .mailchimp-alerts .mailchimp-submitting a:focus {
 	top: 0;
 	font-size: 22px;
 	font-weight: bold;
-	color: #59ca6d
+	color: #01569d
 }
 
 .section-commitment .tab-content .num-box .num-box-title {
@@ -18238,7 +18238,7 @@ footer.footer .footer-widget .h3 {
 
 footer.footer .footer-widget h3::before,
 footer.footer .footer-widget .h3::before {
-	background-color: #59ca6d;
+	background-color: #01569d;
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -18257,7 +18257,7 @@ footer.footer .footer-widget ul li a {
 
 footer.footer .footer-widget ul li a:hover,
 footer.footer .footer-widget ul li a:focus {
-	color: #59ca6d
+	color: #01569d
 }
 
 .footer-logo-and-info img {
@@ -18285,7 +18285,7 @@ footer.footer .copyright a {
 
 footer.footer .copyright a:hover,
 footer.footer .copyright a:focus {
-	color: #59ca6d
+	color: #01569d
 }
 
 nav.navigation.pagination {
@@ -18319,7 +18319,7 @@ span.page-numbers.current {
 
 span.page-numbers.current,
 nav.navigation.pagination .nav-links a:hover {
-	background-color: #59ca6d;
+	background-color: #01569d;
 	color: #fff;
 }
 
@@ -18346,7 +18346,7 @@ h2.widget-title:before {
 	left: 0;
 	width: 70px;
 	height: 1px;
-	background-color: #59ca6d;
+	background-color: #01569d;
 	position: absolute;
 }
 
@@ -18382,7 +18382,7 @@ ul.blog_new {
 }
 
 .cleanza-article-toolbar .cleanza-article-toolbar-left .cleanza-article-toolbar-head {
-	color: #59ca6d;
+	color: #01569d;
 	font-weight: 500;
 	display: inline-block;
 	float: left;

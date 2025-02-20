@@ -2717,36 +2717,47 @@ img.emoji {
 }
 
 .banner-row {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
     /* flex-wrap: wrap;  */
-    /* gap: 20px;  */
-    /* padding: 20px; */
 }
 
-.banner-item {
+/* .banner-item {
     border-top: 1px solid white;
     flex: 1 1 calc(33.333% - 20px);
-    /* Chiều rộng mỗi cột là 33.33%, trừ khoảng cách giữa các cột */
+    /* Chiều rộng mỗi cột là 33.33%, 
     background-color: #0174CF;
-    /* Màu xanh dương chủ đạo */
-    /* border-radius: 5px; */
+    /* Màu xanh dương chủ đạo 
+    /* border-radius: 5px; 
     padding: 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     color: #fff;
     text-align: center;
 
+} */
+
+.banner-item {
+    background-color: #0174CF;
+    flex: 1 1 33.33%; /* Each item takes up 1/3 of the row */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    padding: 10px; /* Optional: Add padding around items */
+    text-align: center;
+    margin: 0px;
 }
 
-.banner-item img {
+/* .banner-item img {
     width: 300px;
     height: 60%;
     margin: 0 auto;
     display: block;
     border-radius: 5px;
     margin-bottom: 10px;
+} */
+.banner-item img{
+    width: 100%; /* Make images responsive */
+    height: 60%; /* Maintain aspect ratio */
+    border-radius: 5px;
 }
-
 .banner-item h3 {
     margin: 20px 0px;
     font-size: 23px;
@@ -2768,29 +2779,30 @@ img.emoji {
 /* Responsive: Dàn xuống mỗi ô một hàng trên màn hình nhỏ */
 @media (max-width: 768px) {
     .banner-row {
-        width: 100%;
-        display: flex;
-        overflow-x: auto;
-        white-space: nowrap;
+        display: flex; /* Use flexbox for layout */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent wrapping of items */
+        width: 100%; /* Full width of the container */
     }
-
+    
     .banner-item {
-        width: 100%;
-        flex: 0 0 auto;
-        padding: 15px;
-        text-align: center;
+        flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
+        width: 100%; /* Set a fixed width for each item */
+        margin-right: 10px; /* Space between items */
+        box-sizing: border-box; /* Include padding and border in width calculations */
     }
 
     .banner-item img {
-        height: 190px;
-        border-radius: 8px;
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 8px; /* Optional: Rounded corners */
     }
 
     .banner-item h3 {
-        margin: 10px 0;
+        margin: 10px 0; /* Margin around heading */
+        text-align: center; /* Center text */
     }
 }
-
 .benefits-section {
     display: flex;
     flex-direction: column;
