@@ -77,18 +77,16 @@
 								<div class="nav-inner" style="justify-content: space-between; align-items: center;">
 									<ul id="nav" class="hidden-xs" style="list-style: none; padding: 0; margin: 0;">
 										<li id="menu-item-80" class="menu-item">
-											<a href="#about-us" class="scroll-link"
-												style="color:#ffffff;">Giới
+											<a href="#about-us" class="scroll-link" style="color:#ffffff;">Giới
 												thiệu</a>
 										</li>
 										<li id="menu-item-84" class="menu-item">
-											<a href="#training-program" style="color:#ffffff;"
-												class="scroll-link">Tuyển
+											<a href="#training-program" style="color:#ffffff;" class="scroll-link">Tuyển
 												sinh các ngành</a>
 										</li>
 										<li id="menu-item-87" class="menu-item">
-											<a href="#contact" class="scroll-link"
-												style="color:#ffffff;">Quyền lợi học viên</a>
+											<a href="#contact" class="scroll-link" style="color:#ffffff;">Quyền lợi học
+												viên</a>
 										</li>
 										<!-- <li id="menu-item-88" class="menu-item">
 											<a href="#interest" class="scroll-link"  style="color:#ffffff;">Quyền lợi</a>
@@ -178,9 +176,9 @@
 					</div>
 				</div>
 			</div>
-		
-	</header>
-</div>
+
+		</header>
+	</div>
 	<section class="banner-row">
 		<div class="banner-item">
 			<img src="./images/slider2.jpg" alt="Tuyển sinh cao đẳng mầm non">
@@ -201,7 +199,7 @@
 			<a href="#about-dff" title="Xem thêm" class="scroll-link">Xem chi tiết</a>
 		</div>
 	</section>
-	
+
 
 	<div class="info">
 		<section class="" id="about-us"
@@ -228,7 +226,7 @@
 									tabindex="0">Xem chi tiết</a>
 							</div>
 
-							
+
 						</div>
 
 
@@ -236,7 +234,8 @@
 						<div class="col-lg-6 col-md-6 col-sm-12 about-content " id="image1"
 							style="display: flex; justify-content: center; align-items: center; height: 100%;">
 							<img class="img-responsive mx-auto d-block lazy" src="./images/gt1.jpg"
-								alt="Công ty Home Health Care" style="width: 100%; height: 100%; object-fit: cover; padding-top: 20px;">
+								alt="Công ty Home Health Care"
+								style="width: 100%; height: 100%; object-fit: cover; padding-top: 20px;">
 						</div>
 					</div>
 				</div>
@@ -273,7 +272,7 @@
 								<a href="#" title="Xem thêm" class="scroll-link" onclick="showImageModal1(event)">Xem
 									chi tiết</a>
 							</div>
-							
+
 
 
 						</div>
@@ -337,8 +336,8 @@
 							<a href="#" title="Xem thêm" class="scroll-link" onclick="showImageModal2(event)">Xem chi
 								tiết</a>
 						</div>
-						
-						
+
+
 
 					</div>
 				</div>
@@ -359,7 +358,7 @@
 			image.src = './images/text1.jpg'; // Đặt đường dẫn ảnh
 			modal.style.display = 'flex'; // Hiện modal
 		}
-	
+
 		function closeImageModal2() {
 			document.getElementById('imageModal2').style.display = 'none'; // Ẩn modal
 		}
@@ -1351,12 +1350,12 @@
 			<div class="mm-close" style="display: flex; justify-content: flex-end; align-items: center;">
 				<div class="mm-toggle">
 					<i class="fa fa-times" aria-hidden="true" style="color:#071b0c; ">
-						</i>
+					</i>
 				</div>
 			</div>
 		</div>
 		<ul id="menu-menu-main" class="">
-			<li>					
+			<li>
 			</li>
 			<li
 				class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-78 level parent drop-menu">
@@ -1847,37 +1846,37 @@
 	<script>
 		document.getElementById("registrationForm").addEventListener("submit", function (event) {
 			event.preventDefault(); // Ngăn chặn reload trang
-	
+
 			var form = event.target;
 			var formData = new FormData(form);
-	
+
 			fetch(form.action, {
 				method: "POST",
 				body: formData
 			})
-			.then(response => response.json())
-			.then(data => {
-				if (data.result === "success") {
-					const successMessage = document.getElementById("successMessage");
-					successMessage.style.display = "block";
-					form.reset(); // Reset form sau khi gửi
-					
-					// Ẩn sau 3 giây và reload trang
-					setTimeout(function() {
-						successMessage.style.display = "none";
-						window.location.reload();
-					}, 2000);
-				} else {
-					alert("Có lỗi xảy ra. Vui lòng thử lại!");
-				}
-			})
+				.then(response => response.json())
+				.then(data => {
+					if (data.result === "success") {
+						const successMessage = document.getElementById("successMessage");
+						successMessage.style.display = "block";
+						form.reset(); // Reset form sau khi gửi
+
+						// Ẩn sau 3 giây và reload trang
+						setTimeout(function () {
+							successMessage.style.display = "none";
+							window.location.reload();
+						}, 2000);
+					} else {
+						alert("Có lỗi xảy ra. Vui lòng thử lại!");
+					}
+				})
 			// .catch(error => {
 			// 	console.error("Lỗi:", error);
 			// 	alert("Lỗi kết nối! Vui lòng thử lại sau.");
 			// });
 		});
 	</script>
-	
+
 </body>
 
 </html>

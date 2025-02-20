@@ -2472,9 +2472,10 @@ img.emoji {
     padding: 10px;
     flex-wrap: wrap;
     /* Khoảng cách bên trong */
-    max-width: 100%; /* Đảm bảo không vượt quá chiều rộng của viewport */
+    max-width: 100%;
+    /* Đảm bảo không vượt quá chiều rộng của viewport */
     width: 100%;
-    
+
 }
 
 .header-text {
@@ -2717,8 +2718,10 @@ img.emoji {
 }
 
 .banner-row {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space items evenly */
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Space items evenly */
     /* flex-wrap: wrap;  */
 }
 
@@ -2738,9 +2741,12 @@ img.emoji {
 
 .banner-item {
     background-color: #0174CF;
-    flex: 1 1 33.33%; /* Each item takes up 1/3 of the row */
-    box-sizing: border-box; /* Include padding and border in the element's total width */
-    padding: 10px; /* Optional: Add padding around items */
+    flex: 1 1 33.33%;
+    /* Each item takes up 1/3 of the row */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width */
+    padding: 10px;
+    /* Optional: Add padding around items */
     text-align: center;
     margin: 0px;
 }
@@ -2753,11 +2759,14 @@ img.emoji {
     border-radius: 5px;
     margin-bottom: 10px;
 } */
-.banner-item img{
-    width: 100%; /* Make images responsive */
-    height: 60%; /* Maintain aspect ratio */
+.banner-item img {
+    width: 100%;
+    /* Make images responsive */
+    height: 60%;
+    /* Maintain aspect ratio */
     border-radius: 5px;
 }
+
 .banner-item h3 {
     margin: 20px 0px;
     font-size: 23px;
@@ -2779,30 +2788,44 @@ img.emoji {
 /* Responsive: Dàn xuống mỗi ô một hàng trên màn hình nhỏ */
 @media (max-width: 768px) {
     .banner-row {
-        display: flex; /* Use flexbox for layout */
-        overflow-x: auto; /* Enable horizontal scrolling */
-        white-space: nowrap; /* Prevent wrapping of items */
-        width: 100%; /* Full width of the container */
+        display: flex;
+        /* Use flexbox for layout */
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        white-space: nowrap;
+        /* Prevent wrapping of items */
+        width: 100%;
+        /* Full width of the container */
     }
-    
+
     .banner-item {
-        flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
-        width: 100%; /* Set a fixed width for each item */
-        margin-right: 10px; /* Space between items */
-        box-sizing: border-box; /* Include padding and border in width calculations */
+        flex: 0 0 auto;
+        /* Prevent flex items from growing or shrinking */
+        width: 100%;
+        /* Set a fixed width for each item */
+        margin-right: 10px;
+        /* Space between items */
+        box-sizing: border-box;
+        /* Include padding and border in width calculations */
     }
 
     .banner-item img {
-        width: 100%; /* Make images responsive */
-        height: auto; /* Maintain aspect ratio */
-        border-radius: 8px; /* Optional: Rounded corners */
+        width: 100%;
+        /* Make images responsive */
+        height: auto;
+        /* Maintain aspect ratio */
+        border-radius: 8px;
+        /* Optional: Rounded corners */
     }
 
     .banner-item h3 {
-        margin: 10px 0; /* Margin around heading */
-        text-align: center; /* Center text */
+        margin: 10px 0;
+        /* Margin around heading */
+        text-align: center;
+        /* Center text */
     }
 }
+
 .benefits-section {
     display: flex;
     flex-direction: column;
@@ -3135,19 +3158,19 @@ img.emoji {
 }
 
 @media (max-width: 768px) {
-    .modal-content{
+    .modal-content {
         height: 50%;
     }
 }
 
 /* Đảm bảo mỗi ảnh 1 hàng trên mọi kích thước */
 @media (max-width: 1024px) {
-  .gallery-row {
-    flex-direction: column;
-    align-items: center;
-  }
+    .gallery-row {
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
 .close-menu {
     pointer-events: auto;
 }
-
